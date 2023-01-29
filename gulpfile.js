@@ -3,19 +3,19 @@ const gap = require("gulp-append-prepend");
 
 gulp.task("licenses", async function () {
   // this is to add Creative Tim licenses in the production mode for the minified js
-  gulp
+  await gulp
     .src("build/static/js/*chunk.js", { base: "./" })
     .pipe(
       gap.prependText(`/*!
 
 =========================================================
-* Paper Kit PRO React - v1.3.1
+* Argon Design System Pro React - v1.0.1 based on Argon Design System Pro - v1.0.2
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/paper-kit-pro-react
-* Copyright 2022 Creative Tim (http://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/argon-design-system-pro-react
+* Copyright 2020 Creative Tim (https://www.creative-tim.com)
 
-* Coded by Creative Tim
+Coded by www.creative-tim.com
 
 =========================================================
 
@@ -26,19 +26,19 @@ gulp.task("licenses", async function () {
     .pipe(gulp.dest("./", { overwrite: true }));
 
   // this is to add Creative Tim licenses in the production mode for the minified html
-  gulp
+  await gulp
     .src("build/index.html", { base: "./" })
     .pipe(
       gap.prependText(`<!--
 
 =========================================================
-* Paper Kit PRO React - v1.3.1
+* Argon Design System Pro React - v1.0.1 based on Argon Design System Pro - v1.0.2
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/paper-kit-pro-react
-* Copyright 2022 Creative Tim (http://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/argon-design-system-pro-react
+* Copyright 2020 Creative Tim (https://www.creative-tim.com)
 
-* Coded by Creative Tim
+Coded by www.creative-tim.com
 
 =========================================================
 
@@ -49,19 +49,19 @@ gulp.task("licenses", async function () {
     .pipe(gulp.dest("./", { overwrite: true }));
 
   // this is to add Creative Tim licenses in the production mode for the minified css
-  gulp
+  await gulp
     .src("build/static/css/*chunk.css", { base: "./" })
     .pipe(
       gap.prependText(`/*!
 
 =========================================================
-* Paper Kit PRO React - v1.3.1
+* Argon Design System Pro React - v1.0.1 based on Argon Design System Pro - v1.0.2
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/paper-kit-pro-react
-* Copyright 2022 Creative Tim (http://www.creative-tim.com)
+* Product Page: https://www.creative-tim.com/product/argon-design-system-pro-react
+* Copyright 2020 Creative Tim (https://www.creative-tim.com)
 
-* Coded by Creative Tim
+Coded by www.creative-tim.com
 
 =========================================================
 
