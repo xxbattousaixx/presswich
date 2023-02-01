@@ -31,7 +31,6 @@ function ResetPage() {
           ></div>
           <Container>
             <Col className="mx-auto" lg="5" md="8">
-              <ResetCard1 />
             </Col>
           </Container>
         </div>

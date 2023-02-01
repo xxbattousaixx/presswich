@@ -18,10 +18,9 @@ function Blogs1() {
         <Container>
           <Row className="mb-5">
             <Col md="8">
-              <h3 className="display-3">Our recent writings</h3>
+              <h3 className="display-3">Our side items</h3>
               <p className="lead mt-1">
-                The time is now for it to be okay to be great. People in this
-                world shun people for being great.
+                Enjoy !
               </p>
             </Col>
           </Row>
@@ -35,16 +34,17 @@ function Blogs1() {
                   className="full-background"
                   style={{
                     backgroundImage:
-                      "url(" + require("assets/img/theme/josh-appel.jpg") + ")",
+                      "url(" + require("assets/img/sections/pawel-nolbert.jpg") + ")",
                   }}
                 ></div>
                 <a href="#pablo" onClick={(e) => e.preventDefault()}>
                   <CardBody>
                     <div className="content-bottom">
                       <h6 className="card-category text-white opacity-8">
-                        New Challenges
+                        Churros (2) $6.00
                       </h6>
-                      <CardTitle tag="h5">Touch on a trend</CardTitle>
+                      
+                      <CardTitle tag="h5">Fried dough dusted with sugar or cinnamon.</CardTitle>
                     </div>
                   </CardBody>
                 </a>
@@ -59,16 +59,16 @@ function Blogs1() {
                   className="full-background"
                   style={{
                     backgroundImage:
-                      "url(" + require("assets/img/theme/john-hoang.jpg") + ")",
+                      "url(" + require("assets/img/sections/twk-tt.jpg") + ")",
                   }}
                 ></div>
                 <a href="#pablo" onClick={(e) => e.preventDefault()}>
                   <CardBody>
                     <div className="content-bottom">
                       <h6 className="card-category text-white opacity-8">
-                        New Opportunities
+                      Soda or Water $2.00
                       </h6>
-                      <CardTitle tag="h5">Constantly growing</CardTitle>
+                      <CardTitle tag="h5">Grab a drink</CardTitle>
                     </div>
                   </CardBody>
                 </a>
@@ -83,17 +83,17 @@ function Blogs1() {
                   className="full-background"
                   style={{
                     backgroundImage:
-                      "url(" + require("assets/img/theme/kit-suman.jpg") + ")",
+                      "url(" + require("assets/img/sections/mark-harrison.jpg") + ")",
                   }}
                 ></div>
                 <a href="#pablo" onClick={(e) => e.preventDefault()}>
                   <CardBody>
                     <div className="content-bottom">
                       <h6 className="card-category text-white opacity-8">
-                        Sales Leads
+                        Seasoned Fries $6.00
                       </h6>
                       <CardTitle tag="h5">
-                        Configure Blockchain Technology
+                        Instant Classic
                       </CardTitle>
                     </div>
                   </CardBody>
@@ -101,86 +101,7 @@ function Blogs1() {
               </Card>
             </Col>
           </Row>
-          <Row className="align-items-center">
-            <Col lg="6">
-              <Card
-                className="card-blog card-background"
-                data-animation="zooming"
-              >
-                <div
-                  className="full-background"
-                  style={{
-                    backgroundImage:
-                      "url(" + require("assets/img/sections/damian.jpg") + ")",
-                  }}
-                ></div>
-                <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                  <CardBody>
-                    <div className="content-bottom">
-                      <h6 className="card-category text-white opacity-8">
-                        AI at the Edge
-                      </h6>
-                      <CardTitle tag="h5">Research Byte</CardTitle>
-                    </div>
-                  </CardBody>
-                </a>
-              </Card>
-            </Col>
-            <Col lg="3">
-              <Card
-                className="card-blog card-background"
-                data-animation="zooming"
-              >
-                <div
-                  className="full-background"
-                  style={{
-                    backgroundImage:
-                      "url(" + require("assets/img/sections/ashim.jpg") + ")",
-                  }}
-                ></div>
-                <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                  <CardBody>
-                    <div className="content-bottom">
-                      <h6 className="card-category text-white opacity-8">
-                        Spectrum
-                      </h6>
-                      <CardTitle tag="h5">Data Virtualization</CardTitle>
-                    </div>
-                  </CardBody>
-                </a>
-              </Card>
-            </Col>
-            <Col lg="3">
-              <Card
-                className="card-blog card-background"
-                data-animation="zooming"
-              >
-                <div
-                  className="full-background"
-                  style={{
-                    backgroundImage:
-                      "url(" + require("assets/img/sections/odin.jpg") + ")",
-                  }}
-                ></div>
-                <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                  <CardBody>
-                    <div className="content-bottom">
-                      <h6 className="card-category text-white opacity-8">
-                        Touch on a trend
-                      </h6>
-                      <CardTitle tag="h5">New Challenges</CardTitle>
-                    </div>
-                  </CardBody>
-                </a>
-              </Card>
-            </Col>
-          </Row>
-          <Button className="btn-icon mt-4" color="primary" type="button">
-            <span className="btn-inner--text">Show more</span>
-            <span className="btn-inner--icon">
-              <i className="ni ni-bold-right"></i>
-            </span>
-          </Button>
+         
         </Container>
       </section>
     </>

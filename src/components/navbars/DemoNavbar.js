@@ -53,7 +53,7 @@ function DemoNavbar(props) {
         id="dark-navbar-main"
       >
         <Container>
-          <NavbarBrand className="mr-lg-5" to="/Presentation" tag={Link}>
+          <NavbarBrand className="mr-lg-5" to="/" tag={Link}>
             HOME
           </NavbarBrand>
           <button
@@ -97,7 +97,7 @@ function DemoNavbar(props) {
               <UncontrolledDropdown nav>
                 <DropdownToggle
                   data-toggle="dropdown"
-                  href="#pablo"
+                  
                   onClick={(e) => e.preventDefault()}
                   role="button"
                   tag={NavLink}
@@ -109,46 +109,28 @@ function DemoNavbar(props) {
                   <div className="dropdown-menu-inner">
                     <Media
                       className="d-flex align-items-center"
-                      to="/index"
+                      to="/about"
                       tag={Link}
                     >
                       <div className="icon icon-shape bg-gradient-primary rounded-circle text-white">
-                        <i className="ni ni-spaceship"></i>
+                        <i className="ni ni-delivery-fast"></i>
                       </div>
                       <Media body className="ml-3">
                         <h6 className="heading text-primary mb-md-1">
-                          About Us
+                          WichPress Food Truck
                         </h6>
                         <p className="description d-none d-md-inline-block mb-0">
                           Our mission and story
                         </p>
                       </Media>
                     </Media>
-                    <Media
-                      className="d-flex align-items-center"
-                      to="/presentation"
-                      tag={Link}
-                    >
-                      <div className="icon icon-shape bg-gradient-warning rounded-circle text-white">
-                        <i className="ni ni-palette"></i>
-                      </div>
-                      <Media body className="ml-3">
-                        <h6 className="heading text-primary mb-md-1">
-                          Food gallery
-                        </h6>
-                        <p className="description d-none d-md-inline-block mb-0">
-                          Check out some fresh food
-                        </p>
-                      </Media>
-                    </Media>
+                   
                   </div>
                   <div className="dropdown-menu-footer">
-                    <DropdownItem href="https://www.creative-tim.com/learning-lab/reactstrap/overview/argon-design-system">
-                      <i className="ni ni-atom"></i> Locations
+                    <DropdownItem href="/locations">
+                      <i className="ni ni-map-big"></i> Locations
                     </DropdownItem>
-                    <DropdownItem href="https://www.creative-tim.com/learning-lab/reactstrap/colors/argon-design-system">
-                      <i className="ni ni-ui-04"></i> Events
-                    </DropdownItem>
+                
 
                   </div>
                 </DropdownMenu>
@@ -157,51 +139,41 @@ function DemoNavbar(props) {
                 <DropdownToggle
                   tag={NavLink}
                   data-toggle="dropdown"
-                  href="#pablo"
                   onClick={(e) => e.preventDefault()}
                   role="button"
                 >
-                  <i className="ni ni-app d-lg-none"></i>
+                  <i className="ni ni-bullet-list-67 d-lg-none"></i>
                   <span className="nav-link-inner--text">Menu</span>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby="navbarDropdownMenuLink">
-                  <DropdownItem tag={Link} to="/sections#headers">
-                    <i className="ni ni-album-2 text-info"></i>
-                    Appetizers
+                  <DropdownItem tag={Link} to="/menu#favorites">
+                    <i className="ni ni-satisfied text-info"></i>
+                    Favorites
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/sections#features">
-                    <i className="ni ni-settings text-danger"></i>
-                    Features
+                  <DropdownItem tag={Link} to="/menu#sandwiches">
+                    <i className="ni ni-tie-bow text-primary"></i>
+                    Sandwiches
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/sections#blogs">
-                    <i className="ni ni-align-left-2 text-primary"></i>
-                    Entrees
+                  <DropdownItem tag={Link} to="/menu#quesadillas">
+                    <i className="ni ni-scissors text-warning"></i>
+                    Quesadillas
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/sections#teams">
-                    <i className="ni ni-user-run text-danger"></i>
-                    Combos
-                  </DropdownItem>
-                  <DropdownItem tag={Link} to="/sections#projects">
-                    <i className="ni ni-paper-diploma text-purple"></i>
-                    Desserts
-                  </DropdownItem>
-                  <DropdownItem tag={Link} to="/sections#pricing">
-                    <i className="ni ni-money-coins text-pink"></i>
-                    Drinks
+                  <DropdownItem tag={Link} to="/menu#drinks">
+                    <i className="ni ni-basket text-purple"></i>
+                    Sweet Treats & Drinks
                   </DropdownItem>
                   
                 </DropdownMenu>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav>
               <DropdownToggle
-                  tag={NavLink}
-                  data-toggle="dropdown"
-                  href="/contact-us"
+                  tag={Link}
+                  
+                  to="/contact-us"
                   role="button"
                 >
-                   <DropdownItem tag={Link} to="/contact-us">
-                  <p className="text-white" href="/contact-us">CONTACT US</p>
-                  </DropdownItem>
+                  <i className="ni ni-notification-70"></i>
+                  <span className="nav-link-inner--text text-danger">Contact Us</span>
                   </DropdownToggle>
               </UncontrolledDropdown>
             </Nav>

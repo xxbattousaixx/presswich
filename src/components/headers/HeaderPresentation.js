@@ -12,9 +12,9 @@ function HeaderPresentation() {
         <div className="page-header">
           <div
             className="page-header-image"
-            style={{
+            style={{backgroundColor:"green",
               backgroundImage:
-                "url(" + require("assets/img/ill/presentation_bg.png") + ")",
+                "url(" + require("assets/img/sections/t1.jpeg") + ")",
             }}
           ></div>
           <Container
@@ -33,13 +33,13 @@ function HeaderPresentation() {
                  
                   <p className="lead">
                    <br></br>
-                    <b>WhichPress Food Truck</b>
+                    <b className="text-warning">WichPress Food Truck</b>
                   </p>
                   <div className="btn-wrapper mt-5">
                     <Button
                       className="btn-white btn-icon mb-3 mb-sm-0"
                       color="default"
-                      href="https://www.creative-tim.com/product/argon-design-system-pro-react?ref=adspr-header-presentation"
+                      href="/menu#headers"
                     >
                       <span className="btn-inner--icon">
                         <i className="fas fa-shopping-cart"></i>
@@ -47,16 +47,7 @@ function HeaderPresentation() {
                       <span className="btn-inner--text">Full Menu</span>
                     </Button>
                   </div>
-                  <div className="mt-5">
-                    <small className="font-weight-bold mb-0 mr-2">
-                      *proudly coded by
-                    </small>
-                    <img
-                      alt="..."
-                      src={require("assets/img/brand/creativetim-black-slim.png")}
-                      style={{ height: "28px" }}
-                    ></img>
-                  </div>
+                 
                 </Col>
               </Row>
             </div>

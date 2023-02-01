@@ -22,7 +22,7 @@ function Accordion1() {
         <Container>
           <Row>
             <Col className="mx-auto text-center" md="6">
-              <h2 className="title mb-3 mt-5">Frequently asked question</h2>
+              <h2 className="title mb-3 mt-5">Frequently asked questions</h2>
             </Col>
           </Row>
           <Row>

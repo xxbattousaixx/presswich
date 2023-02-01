@@ -126,7 +126,7 @@ function ContactUs4() {
     <>
       <div className="contactus-4">
         <MapComponent
-          googleMapURL="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"
+          googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBspp4zh1cbU7jKihTkhFjo4rPkTYNlxAM"
           loadingElement={<div style={{ height: `100%` }} />}
           containerElement={<div className="map" id="map-contactus-2" />}
           mapElement={<div />}
@@ -146,10 +146,27 @@ function ContactUs4() {
                   <Col className="pr-md-0" lg="8" md="7">
                     <Form
                       className="p-3"
-                      id="contact-form-3"
+                      action="https://postmail.invotes.com/send"
                       method="post"
+                      id="contact_form"
                       role="form"
                     >
+                       <input
+                      type="hidden"
+                      name="access_token"
+                      value="63yiwt3vt3p7kwh8m7zcdmd0"
+                    />
+                    <input
+                      type="hidden"
+                      name="success_url"
+                      value=".?message=Email+Successfully+Sent%21&isError=0"
+                    />
+                    <input
+                      type="hidden"
+                      name="error_url"
+                      value=".?message=Email+could+not+be+sent.&isError=1"
+                    />
+
                       <CardHeader>
                         <CardTitle tag="h4">Send us a message</CardTitle>
                       </CardHeader>
@@ -168,6 +185,7 @@ function ContactUs4() {
                                   aria-label="First Name..."
                                   placeholder="First Name..."
                                   type="text"
+                                  name="subject"
                                   onFocus={() => setFirstNameFocus("focused")}
                                   onBlur={() => setFirstNameFocus("")}
                                 ></Input>
@@ -187,6 +205,7 @@ function ContactUs4() {
                                   aria-label="Last Name..."
                                   placeholder="Last Name..."
                                   type="text"
+                                  name="extra_subject"
                                   onFocus={() => setEmailFocus("focused")}
                                   onBlur={() => setEmailFocus("")}
                                 ></Input>
@@ -205,6 +224,7 @@ function ContactUs4() {
                             <Input
                               placeholder="Email Here..."
                               type="text"
+                              name="text"
                             ></Input>
                           </InputGroup>
                         </FormGroup>
@@ -212,7 +232,7 @@ function ContactUs4() {
                           <label>Your message</label>
                           <Input
                             id="contact-us-message-4"
-                            name="message"
+                            name="extra_Message"
                             rows="6"
                             type="textarea"
                           ></Input>
@@ -234,10 +254,17 @@ function ContactUs4() {
                             </div>
                           </Col>
                           <Col md="6">
+                          <input
+                        type="hidden"
+                        name="access_token"
+                        value="63yiwt3vt3p7kwh8m7zcdmd0"
+                      />
                             <Button
                               className="pull-right"
                               color="info"
                               type="submit"
+                              id="submit_form"
+                              value="Contact Us"
                             >
                               Send Message
                             </Button>
@@ -257,7 +284,9 @@ function ContactUs4() {
                         </div>
                         <div className="description">
                           <p className="info-title text-white mt-2">
-                            345 Street 2, Bucharest
+                      
+<a href="/locations">       --Our locations--</a><br/>
+                            Tampa, FL
                           </p>
                         </div>
                       </div>
@@ -267,7 +296,7 @@ function ContactUs4() {
                         </div>
                         <div className="description">
                           <p className="info-title text-white mt-2">
-                            +16(3412) 421 241
+                            +1 (813) 421 2412
                           </p>
                         </div>
                       </div>
@@ -277,7 +306,7 @@ function ContactUs4() {
                         </div>
                         <div className="description">
                           <p className="info-title text-white mt-2">
-                            contact@yoursite.com
+                            wichpress@gmail.com
                           </p>
                         </div>
                       </div>

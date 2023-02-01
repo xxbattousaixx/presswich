@@ -5,7 +5,7 @@ import { Container, Row, Button } from "reactstrap";
 
 // Core Components
 import DemoNavbar from "components/navbars/DemoNavbar.js";
-import DemoFooter from "components/footers/DemoFooter.js";
+import Footer3 from "components/footers/Footer3.js";
 import HeaderIndex from "components/headers/HeaderIndex.js";
 // Demo Sections for this page
 import Buttons from "components/index-page/Buttons.js";
@@ -74,74 +74,8 @@ function Index() {
           <i className="ni ni-bold-up"></i>
         </Button>
         <HeaderIndex />
-        <Buttons />
-        <Inputs />
-        <div className="section section-select">
-          <Container>
-            <Row>
-              <Selects />
-              <Dropdowns />
-            </Row>
-            <Row>
-              <Textarea />
-              <Tags />
-            </Row>
-            <Spinners />
-          </Container>
-        </div>
-        <div className="section">
-          <Container>
-            {/*CRTS short for Checkboxes, Radios, Toggles and Sliders*/}
-            <CRTS />
-            <Menus />
-          </Container>
-        </div>
-        <Navbars />
-        <div className="section section-components">
-          <Container>
-            <NavigationPills />
-            <Row>
-              <ProgressBars />
-              <Paginations />
-            </Row>
-            <Badges />
-            <Alerts />
-            <Toasts />
-          </Container>
-        </div>
-        <PreFooters />
-        <Footers />
-        <div className="section section-typography">
-          <Container>
-            <Typography />
-            <Images />
-          </Container>
-        </div>
-        <div className="section section-content-areas">
-          <Container>
-            <h2 className="mt-lg mb-5">
-              <span>Content Areas</span>
-            </h2>
-            <Tables />
-            <Comments />
-            <Chat />
-          </Container>
-        </div>
-        <Cards />
-        <div className="section section-js-components">
-          <Container>
-            <h2 className="mt-lg mb-5">
-              <span>Javascript Components</span>
-            </h2>
-            <Modals />
-            <DatePickers />
-            <TooltipsPopovers />
-            <FileUpload />
-          </Container>
-        </div>
-        <Carousel />
-        <NucleoIcons />
-        <DemoFooter />
+       
+        <Footer3 />
       </div>
     </>
   );

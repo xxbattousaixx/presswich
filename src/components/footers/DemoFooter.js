@@ -32,11 +32,12 @@ function DemoFooter() {
             <Col className="text-lg-center btn-wrapper" lg="6">
               <Button
                 className="btn-icon-only rounded-circle"
-                color="twitter"
+                color="instagram"
                 id="tooltip46149983"
+                href="https://instagram.com/wichpressfoodtruck"
               >
                 <span className="btn-inner--icon">
-                  <i className="fab fa-twitter"></i>
+                  <i className="fab fa-instagram"></i>
                 </span>
               </Button>
               <UncontrolledTooltip delay={0} target="tooltip46149983">
@@ -46,6 +47,7 @@ function DemoFooter() {
                 className="btn-icon-only rounded-circle"
                 color="facebook"
                 id="tooltip844497435"
+                href="https://facebook.com/wichpressfoodtruck"
               >
                 <span className="btn-inner--icon">
                   <i className="fab fa-facebook"></i>
@@ -54,78 +56,45 @@ function DemoFooter() {
               <UncontrolledTooltip delay={0} target="tooltip844497435">
                 Like us
               </UncontrolledTooltip>
-              <Button
-                className="btn-icon-only rounded-circle"
-                color="dribbble"
-                id="tooltip564081339"
-              >
-                <span className="btn-inner--icon">
-                  <i className="fab fa-dribbble"></i>
-                </span>
-              </Button>
-              <UncontrolledTooltip delay={0} target="tooltip564081339">
-                Follow us
-              </UncontrolledTooltip>
-              <Button
-                className="btn-icon-only rounded-circle"
-                color="github"
-                id="tooltip410519243"
-              >
-                <span className="btn-inner--icon">
-                  <i className="fab fa-github"></i>
-                </span>
-              </Button>
-              <UncontrolledTooltip delay={0} target="tooltip410519243">
-                Star on Github
-              </UncontrolledTooltip>
+             
             </Col>
           </Row>
           <hr></hr>
           <Row className="align-items-center justify-content-md-between">
             <Col md="6">
               <div className="copyright">
-                © 2020{" "}
+                © 2023{" "}
                 <a
-                  href="https://www.creative-tim.com/?ref=adspr-footer"
+                  href="/"
                   target="_blank"
                 >
-                  Creative Tim
+                  WichPress Food Truck
                 </a>
                 .
               </div>
             </Col>
             <Col md="6">
               <Nav className="nav-footer justify-content-end">
+               
                 <NavItem>
                   <NavLink
-                    href="https://www.creative-tim.com/?ref=adspr-footer"
-                    target="_blank"
-                  >
-                    Creative Tim
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink
-                    href="https://www.creative-tim.com/presentation?ref=adspr-footer"
-                    target="_blank"
+                    href="/about"
                   >
                     About Us
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    href="https://www.creative-tim.com/blog?ref=adspr-footer"
-                    target="_blank"
+                    href="/menu"
                   >
-                    Blog
+                    Menu
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    href="https://www.creative-tim.com/license?ref=adspr-footer"
-                    target="_blank"
+                    href="/contact-us"
                   >
-                    License
+                    Contact
                   </NavLink>
                 </NavItem>
               </Nav>

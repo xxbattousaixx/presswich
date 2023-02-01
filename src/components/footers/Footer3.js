@@ -14,37 +14,24 @@ function Footer3() {
             <Col md="3">
               <a
                 className="footer-brand"
-                href="#pablo"
-                onClick={(e) => e.preventDefault()}
+                href="/"
+               
               >
-                Argon Design
+                WichPress Food Truck
               </a>
             </Col>
             <Col md="6">
               <div className="column">
                 <ul className="inline-menu">
+               
                   <li>
-                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
-                      Blog
+                    <NavLink href="/menu">
+                      Menu
                     </NavLink>
                   </li>
+               
                   <li>
-                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
-                      Presentation
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
-                      Discover
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
-                      Payment
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
+                    <NavLink href="/contact-us">
                       Contact Us
                     </NavLink>
                   </li>
@@ -53,22 +40,12 @@ function Footer3() {
             </Col>
             <Col md="3" className="text-right">
               <ul className="social-buttons">
-                <li>
-                  <Button
-                    className="btn-icon mr-2"
-                    color="twitter"
-                    href="https://twitter.com/CreativeTim"
-                    size="sm"
-                    target="_blank"
-                  >
-                    <i className="fab fa-twitter"></i>
-                  </Button>{" "}
-                </li>
+                
                 <li>
                   <Button
                     className="btn-icon mr-2"
                     color="facebook"
-                    href="https://www.facebook.com/CreativeTim"
+                    href="https://www.facebook.com/wichpressfoodtruck"
                     size="sm"
                     target="_blank"
                   >
@@ -79,7 +56,7 @@ function Footer3() {
                   <Button
                     className="btn-icon"
                     color="instagram"
-                    href="https://www.instagram.com/CreativeTimOfficial"
+                    href="https://www.instagram.com/wichpressfoodtruck"
                     size="sm"
                     target="_blank"
                   >

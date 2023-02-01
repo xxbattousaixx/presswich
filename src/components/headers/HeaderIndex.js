@@ -2,8 +2,8 @@ import React from "react";
 
 // reactstrap components
 import { Badge, Button, Container, Row, Col } from "reactstrap";
-
 // Core Components
+import Accordion1 from "components/accordions/Accordion1";
 
 function HeaderIndex() {
   return (
@@ -13,6 +13,7 @@ function HeaderIndex() {
           <img
             alt="..."
             className="bg-image"
+            style={{backgroundColor:'yellow'}}
             src={require("assets/img/ill/index_bg.svg").default}
           />
           <Container className="shape-container d-flex align-items-center py-lg">
@@ -25,42 +26,23 @@ function HeaderIndex() {
                     src={require("assets/img/brand/blue.png")}
                     style={{ width: "200px" }}
                   />
-                  <Badge color="info">PRO</Badge>
+                 
                   <p className="lead">
-                    <b className="display-3">All components</b>
-                    <br></br>A beautiful Premium Design System for Bootstrap 4.
+                    <b className="display-3">Welcome</b>
+                    <br></br>We are here to serve you<br/><br/>
+                    Our food truck has been in business for over a decade and we are dedicated to serving your every food need.
                   </p>
+
+                  <img
+                    alt="..."
+                    className="img-fluid"
+                    src={require("assets/img/sections/ft2.jpg")}
+                    style={{ width: "600px" }}
+                  />
+
+
                   <div className="btn-wrapper mt-5">
-                    <Button
-                      className="btn-icon mb-3 mb-sm-0"
-                      color="info"
-                      href="https://www.creative-tim.com/product/argon-design-system-pro-react?ref=adspr-header-index"
-                    >
-                      <span className="btn-inner--icon">
-                        <i className="fas fa-shopping-cart"></i>
-                      </span>
-                      <span className="btn-inner--text">Purchase</span>
-                    </Button>
-                    <Button
-                      className="btn-white btn-icon mb-3 mb-sm-0"
-                      color="default"
-                      href="https://www.creative-tim.com/learning-lab/reactstrap/overview/argon-design-system"
-                    >
-                      <span className="btn-inner--icon">
-                        <i className="fas fa-file"></i>
-                      </span>
-                      <span className="btn-inner--text">Docs</span>
-                    </Button>
-                  </div>
-                  <div className="mt-5">
-                    <small className="font-weight-bold mb-0 mr-2">
-                      *proudly coded by
-                    </small>
-                    <img
-                      alt="..."
-                      src={require("assets/img/brand/creativetim-black-slim.png")}
-                      style={{ height: "28px" }}
-                    ></img>
+                   
                   </div>
                 </Col>
               </Row>
@@ -68,6 +50,7 @@ function HeaderIndex() {
           </Container>
         </div>
       </div>
+      <Accordion1/>
     </>
   );
 }

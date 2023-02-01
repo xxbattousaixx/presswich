@@ -17,14 +17,9 @@ import Blogs7 from "components/blogs/Blogs7.js";
 function BlogsSection() {
   return (
     <>
-      <div className="cd-section" id="blogs">
-        <Blogs1 />
-        <Blogs2 />
-        <Blogs3 />
-        <Blogs4 />
-        <Blogs5 />
-        <Blogs6 />
-        <Blogs7 />
+      <div style={{backgroundColor:'orange'}} className="cd-section" id="blogs">
+        <Blogs4/>
+        <Blogs1/>
       </div>
     </>
   );

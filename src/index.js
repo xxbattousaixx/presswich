@@ -34,14 +34,14 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/index" exact render={(props) => <Index {...props} />} />
+      <Route path="/about" exact render={(props) => <Index {...props} />} />
       <Route
-        path="/sections"
+        path="/menu"
         exact
         render={(props) => <Sections {...props} />}
       />
       <Route
-        path="/presentation"
+        path="/home"
         exact
         render={(props) => <Presentation {...props} />}
       />
@@ -122,16 +122,16 @@ root.render(
         render={(props) => <ProfilePage {...props} />}
       />
       <Route
-        path="/register-page"
+        path="/locations"
         exact
         render={(props) => <RegisterPage {...props} />}
       />
       <Route
-        path="/reset-page"
+        path="/events"
         exact
         render={(props) => <ResetPage {...props} />}
       />
-      <Redirect to="/presentation" />
+      <Redirect to="/home" />
     </Switch>
   </BrowserRouter>
 );
