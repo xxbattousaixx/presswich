@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
+import Lottie from 'react-lottie';
+import animationData from 'assets/lotties/food-truck.json';
 // JavaScript plugin that hides or shows a component based on your scroll
 import Headroom from "headroom.js";
 // reactstrap components
@@ -21,6 +23,15 @@ import {
 } from "reactstrap";
 
 function DemoNavbar(props) {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  };
+
   const [collapseOpen, toggleCollapse] = React.useState(false);
   React.useEffect(() => {
     let headroom = new Headroom(document.getElementById("dark-navbar-main"));
@@ -53,9 +64,16 @@ function DemoNavbar(props) {
         id="dark-navbar-main"
       >
         <Container>
+        <NavbarBrand className="mr-lg-5" to="/menu" tag={Link}><Lottie 
+	    options={defaultOptions}
+     height='8vh'
+      />
+          </NavbarBrand>
+
           <NavbarBrand className="mr-lg-5" to="/" tag={Link}>
             HOME
           </NavbarBrand>
+       
           <button
             className="navbar-toggler"
             type="button"
@@ -71,15 +89,26 @@ function DemoNavbar(props) {
           >
             <div className="navbar-collapse-header">
               <Row>
-                <Col className="collapse-brand" xs="6">
-                  <Link to="/index">
-                    <img
+                <Col className="collapse-brand" xs="4">
+                  <Link to="/">
+                  <img
                       alt="..."
                       src={require("assets/img/brand/blue.png")}
                     ></img>
+          
                   </Link>
-                </Col>
-                <Col className="collapse-close" xs="6">
+          </Col>
+
+                  <Col className="collapse-brand" xs="4">
+                  <Link to="/menu">
+                  <Lottie 
+	    options={defaultOptions}
+    height='30px'
+    width='30px'
+      /></Link>
+              </Col>
+           
+                <Col className="collapse-close" xs="4">
                   <button
                     className="navbar-toggler"
                     onClick={() => toggleCollapse(!collapseOpen)}
@@ -127,7 +156,8 @@ function DemoNavbar(props) {
                    
                   </div>
                   <div className="dropdown-menu-footer">
-                    <DropdownItem href="/locations">
+                    <DropdownItem href="https://streetfoodfinder.com/WichPress"
+                    target="_blank">
                       <i className="ni ni-map-big"></i> Locations
                     </DropdownItem>
                 

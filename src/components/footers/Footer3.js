@@ -15,7 +15,6 @@ function Footer3() {
               <a
                 className="footer-brand"
                 href="/"
-               
               >
                 WichPress Food Truck
               </a>
@@ -39,8 +38,7 @@ function Footer3() {
               </div>
             </Col>
             <Col md="3" className="text-right">
-              <ul className="social-buttons">
-                
+              <ul className="social-buttons">    
                 <li>
                   <Button
                     className="btn-icon mr-2"
@@ -51,8 +49,7 @@ function Footer3() {
                   >
                     <i className="fab fa-facebook-square"></i>
                   </Button>
-                </li>
-                <li>
+               
                   <Button
                     className="btn-icon"
                     color="instagram"
@@ -61,6 +58,24 @@ function Footer3() {
                     target="_blank"
                   >
                     <i className="fab fa-instagram"></i>
+                  </Button>
+              <Button
+                    className="btn-icon"
+                    color="instagram"
+                    href="https://www.twiter.com/wichpress"
+                    size="sm"
+                    target="_blank"
+                  >
+                    <i className="fab fa-twitter"></i>
+                  </Button>
+                 <Button
+                    className="btn-icon"
+                    color="instagram"
+                    href="https://www.pinterest.com/wichpress"
+                    size="sm"
+                    target="_blank"
+                  >
+                    <i className="fab fa-pinterest"></i>
                   </Button>
                 </li>
               </ul>

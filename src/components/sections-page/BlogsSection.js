@@ -21,6 +21,7 @@ function BlogsSection() {
         <Blogs4/>
         <Blogs1/>
       </div>
+      
     </>
   );
 }

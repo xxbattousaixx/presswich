@@ -1,9 +1,9 @@
 import React from "react";
 
 // reactstrap components
-// import {
-//
-// } from "reactstrap";
+import {
+Button
+} from "reactstrap";
 
 // Core Components
 import DemoNavbar from "components/navbars/DemoNavbar.js";
@@ -34,6 +34,18 @@ function Sections() {
     <>
       <DemoNavbar type="dark" />
       <div className="wrapper">
+      <Button
+          className="btn-icon-only back-to-top show"
+          color="primary"
+          name="button"
+          type="button"
+          onClick={() => {
+            window.scrollTo(0, 0);
+            document.body.scrollTop = 0;
+          }}
+        >
+          <i className="ni ni-bold-up"></i>
+        </Button>
         <BlogsSection />
         <DemoFooter />
       </div>

@@ -26,7 +26,7 @@ function DemoFooter() {
                 Thank you for supporting us!
               </h3>
               <h4 className="mb-0 font-weight-light">
-                Let's get in touch on any of these platforms.
+                We cater. Let's get in touch.
               </h4>
             </Col>
             <Col className="text-lg-center btn-wrapper" lg="6">
@@ -50,7 +50,26 @@ function DemoFooter() {
                 href="https://facebook.com/wichpressfoodtruck"
               >
                 <span className="btn-inner--icon">
+                  <i className="fab fa-pinterest"></i>
+                </span>
+              </Button>
+                  <Button
+                className="btn-icon-only rounded-circle"
+                color="pinterest"
+                id="tooltip844497435"
+                href="https://pinterest.com/wichpress"
+              >
+                <span className="btn-inner--icon">
                   <i className="fab fa-facebook"></i>
+                </span>
+              </Button>    <Button
+                className="btn-icon-only rounded-circle"
+                color="twitter"
+                id="tooltip844497435"
+                href="https://twitter.com/wichpress"
+              >
+                <span className="btn-inner--icon">
+                  <i className="fab fa-twitter"></i>
                 </span>
               </Button>
               <UncontrolledTooltip delay={0} target="tooltip844497435">

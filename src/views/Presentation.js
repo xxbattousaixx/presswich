@@ -34,7 +34,6 @@ function Presentation() {
       <DemoNavbar type="primary" />
       <div className="wrapper">
         <HeaderPresentation />
-        
         <Footer3 />
       </div>
     </>

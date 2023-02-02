@@ -136,9 +136,14 @@ function ContactUs() {
   return (
     <>
       <DemoNavbar type="dark" />
-      <div className="wrapper">
+      <div className="wrapper"
+      style={{
+          backgroundImage:
+            "url(" + require("assets/img/vector.jpg") + ")",
+        }}>
         <ContactUs4 />
-        <div className="main">
+        <div className="main"
+        >
           <Container fluid>
             <Row className="mt-5 mb-4 pt-5">
               <Col className="ml-auto mr-auto text-center mt-5" md="8">

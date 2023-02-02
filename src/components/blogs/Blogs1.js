@@ -16,7 +16,7 @@ function Blogs1() {
     <>
       <section className="blogs-1">
         <Container>
-          <Row className="mb-5">
+          <Row   id="drinks" className="mb-5">
             <Col md="8">
               <h3 className="display-3">Our side items</h3>
               <p className="lead mt-1">

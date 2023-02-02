@@ -136,8 +136,7 @@ function ContactUs4() {
             <Col md="5">
               <h1 className="title text-white">Get in Touch</h1>
               <h4 className="description text-white">
-                Do you need more information? Please contact us to find more
-                about our products and services.
+                Do you need to place an order? Call us now !
               </h4>
             </Col>
             <Col className="m-auto" md="12">
@@ -296,7 +295,7 @@ function ContactUs4() {
                         </div>
                         <div className="description">
                           <p className="info-title text-white mt-2">
-                            +1 (813) 421 2412
+                            +1 (813) 724 4100
                           </p>
                         </div>
                       </div>
@@ -306,7 +305,7 @@ function ContactUs4() {
                         </div>
                         <div className="description">
                           <p className="info-title text-white mt-2">
-                            wichpress@gmail.com
+                            info@wichpressfoodtruck.com
                           </p>
                         </div>
                       </div>

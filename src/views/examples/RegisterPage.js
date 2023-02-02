@@ -9,12 +9,15 @@ import {
   InputGroupAddon,
   InputGroupText,
   InputGroup,
+  Row,
+  Col,
   Container,
 } from "reactstrap";
 
 // Core Components
 import DemoNavbar from "components/navbars/DemoNavbar.js";
 import Footer3 from "components/footers/Footer3.js";
+
 
 function RegisterPage() {
   const [activeContainer, setActiveContainer] = React.useState("");
@@ -43,15 +46,22 @@ function RegisterPage() {
               backgroundImage:
                 "url(" + require("assets/img/ill/register_bg.png") + ")",
             }}
-          ></div>
-            <div class="row">
-    <div class="col-md-8 offset-md-2">
-
-    </div>
-  </div>
-  
+          ><br/><br/><br/><br/>
+                    <Row><Col md="12"> <a href="https://streetfoodfinder.com/WichPress"> <b style={{fontSize:"2rem"}}className="text-warning">WichPress Food Truck Locations Calendar</b></a>
+       </Col>  </Row>
+          </div>
+         <iframe
+              src="https://maps.google.com/maps?q=tampa%20international%20airport&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              height="400vh"
+              width="100%"
+              frameBorder="0"
+              allowFullScreen=""
+              aria-hidden="false"
+              tabIndex="0"
+              title="map"
+            ></iframe>
+   
         </div>
-      
 
         <Footer3 />
       </div>
