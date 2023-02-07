@@ -161,7 +161,7 @@ function DemoNavbar(props) {
                   <div className="dropdown-menu-footer">
                     <DropdownItem href="/locations"
                     target="_blank">
-                      <i className="ni ni-map-big"></i> Locations
+                      <i className="ni ni-map-big"></i> FIND US AT OUR LOCATION NOW
                     </DropdownItem>
                 
 
