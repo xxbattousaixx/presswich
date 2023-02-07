@@ -45,8 +45,9 @@ function HeaderIndex() {
                  
                   <p style={{fontFamily:'Indie Flower', fontSize:"2rem", color:'cyan'}} className="lead text-primary">
                     <b className="display-3 text-primary">Welcome</b>
-                    <br></br>We are here to serve you<br/><br/>
-                   <div  className='text-primary'> Our food truck has been in business for over a decade and we are dedicated to serving your every food need.</div>
+                    <br></br><b className="display-3 text-primary">
+brWe are here to serve you</b><br/><br/>
+                   <b  className='text-primary'> Our food truck has been in business for over a decade and we are dedicated to serving your every food need.</b>
                   </p>
 {/* <RubberBand>
                   <img
