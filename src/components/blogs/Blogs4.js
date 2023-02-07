@@ -460,7 +460,7 @@ function Blogs4() {
                 <a  onClick={(e) => e.preventDefault()}>
                     <div className="content-bottom">
                      
-                  <b>  <h5> Veggin Out Quesadilla </h5></div>
+                  <b>  <h5> Veggin Out Quesadilla </h5></b>
 <Col md='3'></Col><Col md='6'>  
                       <h6 className="card-category text-dark opacity-8">
                         2 cheese blend, mushroom, peppers, onions & spinach
