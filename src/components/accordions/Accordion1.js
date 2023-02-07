@@ -18,7 +18,8 @@ function Accordion1() {
   const [openedCollapse, setOpenedCollapse] = React.useState("collapse-1");
   return (
     <>
-      <div className="accordion-1">
+      <div style={{backgroundColor:"#ff9999",
+            }} className="accordion-1">
         <Container>
         <br/><br/><br/>
           <Row>
