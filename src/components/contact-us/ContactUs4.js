@@ -124,7 +124,6 @@ function ContactUs4() {
   const [emailFocus, setEmailFocus] = React.useState("");
   return (
     <>
-      <div className="contactus-4">
         <MapComponent
           googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBspp4zh1cbU7jKihTkhFjo4rPkTYNlxAM"
           loadingElement={<div style={{ height: `100%` }} />}
@@ -132,13 +131,14 @@ function ContactUs4() {
           mapElement={<div />}
         />
         <Container>
+        <br/><br/><br/><br/><br/>
           <Row>
             <Col md="5">
-              <h1 className="title text-white">Get in Touch</h1>
-              <h4 className="description text-white">
-                Do you need to place an order? Call us now !
-              </h4>
+              <h1 className="title text-info"><b style={{fontFamily:'Indie Flower', fontSize:"4rem", color:'cyan'}}>Get in Touch</b></h1>
+              <h4 className="description text-info">
+              </h4><br/><br/>
             </Col>
+            
             <Col className="m-auto" md="12">
               <Card className="card-contact card-raised">
                 <Row>
@@ -171,9 +171,9 @@ function ContactUs4() {
                       </CardHeader>
                       <CardBody>
                         <Row>
-                          <Col md="6">
+                          <Col md="12">
                             <FormGroup className={firstNameFocus}>
-                              <label>First name</label>
+                              <label>Full name</label>
                               <InputGroup>
                                 <InputGroupAddon addonType="prepend">
                                   <InputGroupText>
@@ -181,8 +181,8 @@ function ContactUs4() {
                                   </InputGroupText>
                                 </InputGroupAddon>
                                 <Input
-                                  aria-label="First Name..."
-                                  placeholder="First Name..."
+                                  aria-label="Full Name..."
+                                  placeholder="Full Name..."
                                   type="text"
                                   name="subject"
                                   onFocus={() => setFirstNameFocus("focused")}
@@ -191,7 +191,7 @@ function ContactUs4() {
                               </InputGroup>
                             </FormGroup>
                           </Col>
-                          <Col md="6">
+                          {/* <Col md="6">
                             <FormGroup className={emailFocus}>
                               <label>Last name</label>
                               <InputGroup>
@@ -204,13 +204,13 @@ function ContactUs4() {
                                   aria-label="Last Name..."
                                   placeholder="Last Name..."
                                   type="text"
-                                  name="extra_subject"
+                                  name="extra_text"
                                   onFocus={() => setEmailFocus("focused")}
                                   onBlur={() => setEmailFocus("")}
                                 ></Input>
                               </InputGroup>
                             </FormGroup>
-                          </Col>
+                          </Col> */}
                         </Row>
                         <FormGroup>
                           <label>Email address</label>
@@ -224,6 +224,21 @@ function ContactUs4() {
                               placeholder="Email Here..."
                               type="text"
                               name="text"
+                            ></Input>
+                          </InputGroup>
+                        </FormGroup>
+                        <FormGroup>
+                          <label>Phone Number</label>
+                          <InputGroup>
+                            <InputGroupAddon addonType="prepend">
+                              <InputGroupText>
+                                <i className="ni ni-mobile-button"></i>
+                              </InputGroupText>
+                            </InputGroupAddon>
+                            <Input
+                              placeholder="Phone Here..."
+                              type="text"
+                              name="extra_subject"
                             ></Input>
                           </InputGroup>
                         </FormGroup>
@@ -274,40 +289,39 @@ function ContactUs4() {
                   </Col>
                   <Col className="pl-md-0" lg="4" md="5">
                     <div className="info text-left bg-info">
-                      <CardTitle className="text-white" tag="h4">
+                    <center>  <CardTitle className="text-white" tag="h4">
                         Contact information
-                      </CardTitle>
+                      </CardTitle></center>
                       <div className="info info-horizontal mt-lg-5">
-                        <div className="icon icon-shape bg-white rounded-circle text-info">
+                      <a href="https://streetfoodfinder.com/WichPress">     <div className="icon icon-shape bg-white rounded-circle text-info">
                           <i className="ni ni-square-pin"></i>
                         </div>
                         <div className="description">
                           <p className="info-title text-white mt-2">
-                      
-<a href="/locations">       --Our locations--</a><br/>
-                            Tampa, FL
+                          <center>Click Here<br/>for<br/>
+    Our locations</center>
                           </p>
-                        </div>
-                      </div>
+                        </div></a>
+                      </div><hr/>
                       <div className="info info-horizontal">
-                        <div className="icon icon-shape bg-white rounded-circle text-info">
+                      <a href="tel:8137244100">    <div className="icon icon-shape bg-white rounded-circle text-info">
                           <i className="ni ni-mobile-button"></i>
                         </div>
                         <div className="description">
-                          <p className="info-title text-white mt-2">
-                            +1 (813) 724 4100
+                          <p className="info-title text-white mt-2"><center>
+                            +1 (813) 724 4100</center>
                           </p>
-                        </div>
-                      </div>
+                        </div></a>
+                      </div><hr/>
                       <div className="info info-horizontal">
-                        <div className="icon icon-shape bg-white rounded-circle text-info">
+                <a href="mailto:shawn@wichpressfoodtruck.com">        <div className="icon icon-shape bg-white rounded-circle text-info">
                           <i className="ni ni-email-83"></i>
                         </div>
                         <div className="description">
-                          <p className="info-title text-white mt-2">
-                            info@wichpressfoodtruck.com
+                          <p style={{fontSize:'11px'}} className="info-title text-white mt-2">
+                           <center> shawn@wichpressfoodtruck.com</center>
                           </p>
-                        </div>
+                        </div></a>
                       </div>
                     </div>
                   </Col>
@@ -316,7 +330,6 @@ function ContactUs4() {
             </Col>
           </Row>
         </Container>
-      </div>
     </>
   );
 }

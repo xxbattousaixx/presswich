@@ -2,7 +2,6 @@ import React from "react";
 
 // reactstrap components
 import {
-  Button,
   FormGroup,
   Form,
   Input,
@@ -11,12 +10,13 @@ import {
   InputGroup,
   Row,
   Col,
-  Container,
 } from "reactstrap";
+import { Container, Button, Link } from "react-floating-action-button";
 
 // Core Components
 import DemoNavbar from "components/navbars/DemoNavbar.js";
 import Footer3 from "components/footers/Footer3.js";
+import Locations from "components/Locations.js";
 
 
 function RegisterPage() {
@@ -37,34 +37,38 @@ function RegisterPage() {
   return (
     <>
       <DemoNavbar type="dark" />
-      <div className="wrapper">
+      {/* <div className="wrapper">
         <div className="page-header bg-default">
           
           <div
             className="page-header-image"
             style={{
-              backgroundImage:
-                "url(" + require("assets/img/ill/register_bg.png") + ")",
+              backgroundColor:
+                "yellow",
             }}
           ><br/><br/><br/><br/>
-                    <Row><Col md="12"> <a href="https://streetfoodfinder.com/WichPress"> <b style={{fontSize:"2rem"}}className="text-warning">WichPress Food Truck Locations Calendar</b></a>
-       </Col>  </Row>
+                    <Row><Col md="6"> <a href="https://streetfoodfinder.com/WichPress"> <b style={{fontSize:"2rem"}}className="text-warning">WichPress Food Truck Locations Calendar</b></a>
+       </Col> <Col md='6'>PRESS WICH FOOD TRUCK</Col> </Row>
           </div>
-         <iframe
-              src="https://maps.google.com/maps?q=tampa%20international%20airport&t=&z=13&ie=UTF8&iwloc=&output=embed"
-              height="400vh"
-              width="100%"
-              frameBorder="0"
-              allowFullScreen=""
-              aria-hidden="false"
-              tabIndex="0"
-              title="map"
-            ></iframe>
+     
    
-        </div>
-
+        </div> </div> */}<Locations/>
+        <Container>
+          <Link
+            href="/contact-us"
+            tooltip="Book online"
+            icon="far fa-sticky-note"
+          />
+          <Link href="/contact-us" tooltip="Call us" icon="fas fa-user-plus" />
+          <Button
+            tooltip="We cater!"
+            icon="fas fa-plus"
+            rotate={true}
+            onClick={() => alert("Call us at 813-724-4100")}
+          />
+        </Container>
         <Footer3 />
-      </div>
+     
     </>
   );
 }

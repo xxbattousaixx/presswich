@@ -1,427 +1,448 @@
 import React from "react";
-
+import ReactRoundedImage from "react-rounded-image";
 // reactstrap components
 import { Card, CardBody, CardTitle, Container, Row, Col } from "reactstrap";
+import MyPhoto from "assets/img/sections/athena.jpg";
+import MyPhoto2 from "assets/img/sections/thomas.jpg";
+import MyPhoto3 from "assets/img/sections/odin.jpg";
+import MyPhoto4 from "assets/img/sections/cuban.jpg";
+import MyPhoto5 from "assets/img/sections/dacuban.jpg";
+import MyPhoto6 from "assets/img/sections/hamswiss.jpg";
+import MyPhoto7 from "assets/img/sections/fajita.jpg";
+import MyPhoto8 from "assets/img/sections/ep.jpg";
+import './styles22.css'
+import MyPhoto9 from "assets/img/sections/buffr.jpg";
+import MyPhoto10 from "assets/img/sections/bbq.jpg";
+import MyPhoto11 from "assets/img/sections/chicken.jpg";
+import MyPhoto12 from "assets/img/sections/cheese.jpg";
+import MyPhoto13 from "assets/img/sections/p8.jpg";
+import Bounce from 'react-reveal/Bounce';
+import LightSpeed from 'react-reveal/LightSpeed';
+
+
+
 
 function Blogs4() {
+  
   return (
     <>
       <section className="blogs-4">
-        <Container fluid>
+        <Container fluid><center>
         <br/><br/>
-          <h2 className="title mb-4"><a href="/contact-us">Contact Us</a> to order today!</h2> 
-          All your favorites.
-          <br></br>
+          <h2 style={{fontFamily:'Indie Flower', textShadow:"blue 2px 5px", fontSize:"4rem", color:'cobalt'}} className="title mb-4"><a href="/contact-us">Contact Us</a> to order today!</h2> 
+          <br/><br/><br/>
           <Row>
+      <Col lg="4"></Col>  <Col lg="4">  <h1 style={{fontFamily:'Arial', color:'red', textShadow:'yellow 2px 5px'}} id="favorites">FAVORITES</h1></Col><Col lg="4"></Col>
+
             <Col lg="4">
-              <Card
-                className="card-blog card-background"
-                data-animation="zooming"
-              >
-                <div
+        <div id='zoom'> <LightSpeed left>
+                {/* <div
                   className="full-background"
                   id="favorites"
                   style={{
                     backgroundImage:
                       "url(" + require("assets/img/sections/athena.jpg") + ")"
                   }}
-                ></div>
+                ></div> */}
+                <ReactRoundedImage image={MyPhoto} />
                 <a  onClick={(e) => e.preventDefault()}>
-                  <CardBody>
                     <div className="content-bottom">
-                    <CardTitle tag="h5">Empanadas $6.00</CardTitle>
+                    <b><h5>Empanadas</h5></b>
+                    <Col md='3'></Col><Col md='6'>  
 
-                      <h6 className="card-category text-white opacity-8">
+                    <h6 className="card-category text-dark opacity-8">
                         Beef / Beef & Cheese
                       </h6>
+                      </Col><Col md='3'></Col>
+
                     </div>
-                  </CardBody>
-                </a>
-              </Card>
+                </a></LightSpeed></div>
             </Col>
             <Col lg="4">
-              <Card
-                className="card-blog card-background"
-                data-animation="zooming"
-              >
-                <div
+            <div id='zoom'> <Bounce bottom>
+                {/* <div
                   className="full-background"
                   style={{
                     backgroundImage:
                       "url(" + require("assets/img/sections/thomas.jpg") + ")"
                   }}
-                ></div>
+                ></div> */}
+                {/* <ReactRoundedImage roundedColor="green" image={MyPhoto2} /> */}
+                <section class="carousel" aria-label="carousel" Tabindex="0">
+  <a class="carousel__skip-link" href="#skip-link">Loaded Fries</a>
+  <div class="slides">
+    <div class="slides-item slide-1" id="slide-1" aria-label="slide 1 of 5" tabindex="0"><ReactRoundedImage roundedColor="green" image={MyPhoto2} /></div>
+    <div class="slides-item slide-2" id="slide-2" aria-label="slide 2 of 5" tabindex="0"><ReactRoundedImage roundedColor="green" image={MyPhoto2} /></div>
+    <div class="slides-item slide-3" id="slide-3" aria-label="slide 3 of 5" tabindex="0"><ReactRoundedImage roundedColor="green" image={MyPhoto2} /></div>
+  </div>
+  <div class="carousel__nav">
+    <a class="slider-nav" href="#slide-1" aria-label="Go to slide 1">1</a>
+    <a class="slider-nav" href="#slide-2" aria-label="Go to slide 2">2</a>
+    <a class="slider-nav" href="#slide-3" aria-label="Go to slide 3">3</a>
+  </div>
+  <div class="carousel__skip-message" id="skip-link" tabindex="0"></div>
+</section>
                 <a  onClick={(e) => e.preventDefault()}>
-                  <CardBody>
+                  
                     <div className="content-bottom">
-                    <CardTitle tag="h5">Loaded Fries $13.00</CardTitle>
-                      <h6 className="card-category text-white opacity-8">
-                        Fries topped with queso blanco, drizzled with buffalo, barbeque or honey hot sauce
-                      </h6>
-                      <CardTitle tag="h5">Choose your protein: Chicken, Chicken Bacon, Chicken Fajita, Shredded Pork, Shredded Pork Fajita</CardTitle>
+                   <b> <h5>Loaded Fries</h5></b>
+                    <Col md='3'></Col><Col md='6'>  
+                     <h6 className="card-category text-dark opacity-8">
+                      Fries topped with queso blanco, drizzled with buffalo, barbeque or honey hot sauce<br/>
+                      Choose your protein: Chicken, Chicken Bacon, Chicken Fajita, Shredded Pork, Shredded Pork Fajita</h6>
+                      </Col><Col md='3'></Col>
+                   
                     </div>
-                  </CardBody>
-                </a>
-              </Card>
-            </Col>
-            <Col lg="4">
-              <Card
-                className="card-blog card-background"
-                data-animation="zooming"
-              >
-                <div
+                </a></Bounce></div>
+           </Col>
+             <Col lg="4">
+        <div id='zoom'> <LightSpeed right>
+
+                {/* <div
                   className="full-background"
                   style={{
                     backgroundImage:
                       "url(" + require("assets/img/sections/odin.jpg") + ")"
                   }}
-                ></div>
-                <a  onClick={(e) => e.preventDefault()}>
-                  <CardBody>
-                    <div className="content-bottom">
-                    <CardTitle tag="h5"> Beef Tacos $11.00</CardTitle>
+                ></div> */}
+                <ReactRoundedImage image={MyPhoto3} />
 
-                      <h6 className="card-category text-white opacity-8">
+                <a  onClick={(e) => e.preventDefault()}>
+                 
+                    <div className="content-bottom">
+                 <b>   <h5> Beef Tacos</h5></b>
+                 <Col md='3'></Col><Col md='6'>  
+
+                      <h6 className="card-category text-dark opacity-8">
                        2 flour tortillas, ground beef, topped with lettuce and cheese, fries & side salsa
                       </h6>
+                      </Col><Col md='3'></Col>
+                      
                     </div>
-                  </CardBody>
+                
                 </a>
-              </Card>
+                </LightSpeed>
+            </div>
             </Col>
-           
+
           </Row>
+          <br/><br/><br/>
           <Row className="row-below">
+      <Col id="sandwiches" lg="4"></Col>  <Col lg="4">  <h1 style={{fontFamily:'Arial', color:'red', textShadow:'yellow 2px 5px'}}>SANDWICHES</h1></Col><Col lg="4"></Col>
+
             <Col lg="4">
-              <Card
-                className="card-blog card-background"
-                data-animation="zooming"
-              >
+
+        <div id='zoom'> <LightSpeed left>
+
+            <ReactRoundedImage image={MyPhoto4} />
+{/*            
                 <div
                   className="full-background"
-                  id="sandwiches"
+                  
                   style={{
                     backgroundImage:
                       "url(" + require("assets/img/sections/cuban.jpg") + ")"
                   }}
-                ></div>
+                ></div> */}
                 <a  onClick={(e) => e.preventDefault()}>
-                  <CardBody>
                     <div className="content-bottom" >
-                    <CardTitle tag="h5"> Da Cuban $13.00</CardTitle>
-                      <h6 className="card-category text-white opacity-8">
+                 <b>   <h5> Da Cuban </h5></b>
+                 <Col md='3'></Col><Col md='6'>  
+                   
+                      <h6 className="card-category text-dark opacity-8">
                         Pressed Cuban bread with Latin pork, cheese, ham, pickles and mayo/mustard
                       </h6>
+                      </Col><Col md='3'></Col>
                      
                     </div>
-                  </CardBody>
-                </a>
-              </Card>
+                </a></LightSpeed></div>
             </Col>
             <Col lg="4">
-              <Card
-                className="card-blog card-background"
-                data-animation="zooming"
-              >
+
+        <div id='zoom'> <Bounce top>
+
+            <ReactRoundedImage roundedColor="green" image={MyPhoto5} />
+
+{/*              
                 <div
                   className="full-background"
                   style={{
                     backgroundImage:
                       "url(" + require("assets/img/sections/dacuban.jpg") + ")"
                   }}
-                ></div>
+                ></div> */}
                 <a  onClick={(e) => e.preventDefault()}>
-                  <CardBody>
                     <div className="content-bottom">
-                    <CardTitle tag="h5"> Pork Sandwich $13.00</CardTitle>
-                      <h6 className="card-category text-white opacity-8">
+                  <b>  <h5> Pork Sandwich </h5></b>
+                 <Col md='3'></Col><Col md='6'>  
+
+                      <h6 className="card-category text-dark opacity-8">
                         Pressed Cuban bread with Latin pork and onions
                       </h6>
+                      </Col><Col md='3'></Col>
+
                     </div>
-                  </CardBody>
-                </a>
-              </Card>
+                </a></Bounce></div>
             </Col>
             <Col lg="4">
-              <Card
-                className="card-blog card-background"
-                data-animation="zooming"
-              >
+
+        <div id='zoom'> <LightSpeed right>
+
+            <ReactRoundedImage image={MyPhoto6} />
+{/*             
                   <div
                   className="full-background"
                   style={{
                     backgroundImage:
                       "url(" + require("assets/img/sections/hamswiss.jpg") + ")"
                   }}
-                ></div>
+                ></div> */}
                 <a  onClick={(e) => e.preventDefault()}>
-                  <CardBody>
                     <div className="content-bottom">
-                    <CardTitle tag="h5"> Ham and Swiss $13.00</CardTitle>
-                      <h6 className="card-category text-white opacity-8">
+               <b>     <h5> Ham and Swiss</h5></b>
+               <Col md='3'></Col><Col md='6'>  
+
+                      <h6 className="card-category text-dark opacity-8">
                         Pressed Cuban bread with ham and American/Swiss cheese
                       </h6>
+                      </Col><Col md='3'></Col>
+
                     </div>
-                  </CardBody>
-                </a>
-              </Card>
+                </a></LightSpeed></div>
             </Col>
             
           </Row>
-          <Row className="row-below">
-            <Col lg="2">
-              <Card
-                className="card-blog card-background"
-                data-animation="zooming"
-              >
-                <div
+          <br/><br/><br/>
+          <Row  className="row-below">
+      <Col id="quesadillas" lg="4"></Col>  <Col lg="4">  <h1 style={{fontFamily:'Arial', color:'red', textShadow:'yellow 2px 5px'}}>QUESADILLAS</h1></Col><Col lg="4"></Col>
+
+            <Col lg="4">
+        <div id='zoom'> <LightSpeed left>
+
+            <ReactRoundedImage image={MyPhoto7} />
+         
+                {/* <div
                   className="full-background"
                   id="quesadillas"
                   style={{
                     backgroundImage:
                       "url(" + require("assets/img/sections/fajita.jpg") + ")"
                   }}
-                ></div>
+                ></div> */}
                 <a  onClick={(e) => e.preventDefault()}>
-                  <CardBody>
                     <div className="content-bottom" >
-                    <CardTitle tag="h5"> Fajita Quesadilla $13.00</CardTitle>
-                      <h6 className="card-category text-white opacity-8">
+                  <b>  <h5> Fajita Quesadilla</h5></b>
+               <Col md='3'></Col><Col md='6'>  
+
+                      <h6 className="card-category text-dark opacity-8">
                         2 cheese blend, grilled chicken or pork, sauteed peppers and onions
                       </h6>
+                      </Col><Col md='3'></Col>
+
                     </div>
-                  </CardBody>
-                </a>
-              </Card>
+                </a></LightSpeed></div>
             </Col>
-            <Col lg="2">
-              <Card
-                className="card-blog card-background"
-                data-animation="zooming"
-              >
-                <div
+            <Col lg="4">
+        <div id='zoom'> <Bounce top>
+
+            <ReactRoundedImage roundedColor="green" image={MyPhoto8} />
+             
+                {/* <div
                   className="full-background"
                   style={{
                     backgroundImage:
                       "url(" + require("assets/img/sections/ep.jpg") + ")"
                   }}
-                ></div>
+                ></div> */}
                 <a  onClick={(e) => e.preventDefault()}>
-                  <CardBody>
                     <div className="content-bottom">
                     
-                    <CardTitle tag="h5"> Chicken Bacon Ranch Quesadilla $13.00</CardTitle>
+                    <h5> Chicken Bacon Ranch Quesadilla $13.00</h5>
                       <h6 className="card-category text-white opacity-8">
                         2 cheese blend, grilled chicken, bacon w/ranch
                       </h6>
                     </div>
-                  </CardBody>
-                </a>
-              </Card>
+                </a></Bounce></div>
             </Col>
-            <Col lg="2">
-              <Card
-                className="card-blog card-background"
-                data-animation="zooming"
-              >
-             <div
+            <Col lg="4">
+        <div id='zoom'> <LightSpeed right>
+
+            <ReactRoundedImage image={MyPhoto9} />
+            
+             {/* <div
                   className="full-background"
                   style={{
                     backgroundImage:
                       "url(" + require("assets/img/sections/buffr.jpg") + ")"
                   }}
-                ></div>
+                ></div> */}
                 <a  onClick={(e) => e.preventDefault()}>
-                  <CardBody>
                     <div className="content-bottom">
                       
-                    <CardTitle tag="h5"> Honey Hot Chicken Quesadilla $13.00</CardTitle>
+                    <h5> Honey Hot Chicken Quesadilla $13.00</h5>
                       <h6 className="card-category text-white opacity-8">
                         2 cheese blend, grilled chicken, honey hot sauce
                       </h6>
                     </div>
-                  </CardBody>
-                </a>
-              </Card>
+                </a></LightSpeed></div>
             </Col>
-            <Col lg="2">
-              <Card
-                className="card-blog card-background"
-                data-animation="zooming"
-              >
-              <div
+            <Col lg="4">
+        <div id='zoom'> <LightSpeed left>
+
+            <ReactRoundedImage image={MyPhoto10} />
+            
+              {/* <div
                   className="full-background"
                   style={{
                     backgroundImage:
                       "url(" + require("assets/img/sections/bbq.jpg") + ")"
                   }}
-                ></div>
+                ></div> */}
                 <a  onClick={(e) => e.preventDefault()}>
-                  <CardBody>
                     <div className="content-bottom">
                       
-                    <CardTitle tag="h5"> LatinPork Quesadilla $13.00</CardTitle>
+                    <h5> LatinPork Quesadilla $13.00</h5>
                       <h6 className="card-category text-white opacity-8">
                         2 cheese blend with Latin pork
                       </h6>
                     </div>
-                  </CardBody>
-                </a>
-              </Card>
+                </a></LightSpeed></div>
             </Col>
-            <Col lg="2">
-              <Card
-                className="card-blog card-background"
-                data-animation="zooming"
-              >
-             <div
+            <Col lg="4">
+        <div id='zoom'> <Bounce top>
+
+            <ReactRoundedImage roundedColor="green" image={MyPhoto8} />
+            
+             {/* <div
                   className="full-background"
                   style={{
                     backgroundImage:
                       "url(" + require("assets/img/sections/ep.jpg") + ")"
                   }}
-                ></div>
+                ></div> */}
                 <a  onClick={(e) => e.preventDefault()}>
-                  <CardBody>
                     <div className="content-bottom">
                      
-                    <CardTitle tag="h5"> Chicken Pesto Quesadilla $13.00</CardTitle>
+                    <h5> Chicken Pesto Quesadilla $13.00</h5>
                       <h6 className="card-category text-white opacity-8">
                         Mozzarella cheese, grilled chicken, onion with basil pesto
                       </h6>
                     </div>
-                  </CardBody>
-                </a>
-              </Card>
+                </a></Bounce></div>
             </Col>
-            <Col lg="2">
-              <Card
-                className="card-blog card-background"
-                data-animation="zooming"
-              >
-                    <div
+            <Col lg="4">
+        <div id='zoom'> <LightSpeed right>
+
+            <ReactRoundedImage image={MyPhoto9} />
+             
+                    {/* <div
                   className="full-background"
                   style={{
                     backgroundImage:
                       "url(" + require("assets/img/sections/buffr.jpg") + ")"
                   }}
-                ></div>
+                ></div> */}
                 <a  onClick={(e) => e.preventDefault()}>
-                  <CardBody>
                     <div className="content-bottom">
                      
-                    <CardTitle tag="h5"> Buffalo Chicken Quesadilla $13.00</CardTitle>
+                    <h5> Buffalo Chicken Quesadilla $13.00</h5>
                       <h6 className="card-category text-white opacity-8">
                         2 cheese blend, grilled chicken, buffalo wing sauce w/ranch
                       </h6>
                     </div>
-                  </CardBody>
-                </a>
-              </Card>
+                </a></LightSpeed></div>
             </Col>
           </Row>
           <Row className="row-below">
-            <Col lg="3">
-              <Card
-                className="card-blog card-background"
-                data-animation="zooming"
-              >
-                <div
+            <Col lg="4">
+        <div id='zoom'> <LightSpeed left>
+
+            <ReactRoundedImage image={MyPhoto10} />
+           
+                {/* <div
                   className="full-background"
                   style={{
                     backgroundImage:
                       "url(" + require("assets/img/sections/bbq.jpg") + ")"
                   }}
-                ></div>
+                ></div> */}
                 <a  onClick={(e) => e.preventDefault()}>
-                  <CardBody>
                     <div className="content-bottom">
                      
-                    <CardTitle tag="h5"> Barbeque Quesadilla $13.00</CardTitle>
+                    <h5> Barbeque Quesadilla $13.00</h5>
                       <h6 className="card-category text-white opacity-8">
                         2 cheese blend, grilled chicken or pork, sauteed onions w/barbeque sauce
                       </h6>
                     </div>
-                  </CardBody>
-                </a>
-              </Card>
+                </a></LightSpeed></div>
             </Col>
-            <Col lg="3">
-              <Card
-                className="card-blog card-background"
-                data-animation="zooming"
-              >
-                <div
+            <Col lg="4">
+        <div id='zoom'> <Bounce top>
+              
+            <ReactRoundedImage roundedColor="green" image={MyPhoto11} />
+           
+                {/* <div
                   className="full-background"
                   style={{
                     backgroundImage:
                       "url(" + require("assets/img/sections/chicken.jpg") + ")"
                   }}
-                ></div>
+                ></div> */}
                 <a  onClick={(e) => e.preventDefault()}>
-                  <CardBody>
                     <div className="content-bottom">
                     
-                    <CardTitle tag="h5"> Chicken Quesadilla $13.00</CardTitle>
+                    <h5> Chicken Quesadilla $13.00</h5>
                       <h6 className="card-category text-white opacity-8">
                         2 cheese blend, grilled chicken
                       </h6>
                     </div>
-                  </CardBody>
-                </a>
-              </Card>
+                </a></Bounce></div>
             </Col>
-            <Col lg="3">
-              <Card
-                className="card-blog card-background"
-                data-animation="zooming"
-              >
-               <div
+            <Col lg="4">
+        <div id='zoom'> <LightSpeed right>
+
+            <ReactRoundedImage image={MyPhoto12} />
+           
+               {/* <div
                   className="full-background"
                   style={{
                     backgroundImage:
                       "url(" + require("assets/img/sections/cheese.jpg") + ")"
                   }}
-                ></div>
+                ></div> */}
                 <a  onClick={(e) => e.preventDefault()}>
-                  <CardBody>
                     <div className="content-bottom">
                       
-                    <CardTitle tag="h5"> Cheese Quesadilla $13.00</CardTitle>
+                    <h5> Cheese Quesadilla $13.00</h5>
                       <h6 className="card-category text-white opacity-8">
                         2 cheese blend
                       </h6>
                     </div>
-                  </CardBody>
-                </a>
-              </Card>
-            </Col>
-            <Col lg="3">
-              <Card
-                className="card-blog card-background"
-                data-animation="zooming"
-              >
-               <div
+                </a></LightSpeed></div>
+            </Col><Col lg="4"></Col>
+            <Col lg="4">
+        <div id='zoom'> <Bounce top>
+
+            <ReactRoundedImage roundedColor="green" image={MyPhoto13} />
+
+               {/* <div
                   className="full-background"
                   style={{
                     backgroundImage:
                       "url(" + require("assets/img/sections/p8.jpg") + ")"
                   }}
-                ></div>
+                ></div> */}
                 <a  onClick={(e) => e.preventDefault()}>
-                  <CardBody>
                     <div className="content-bottom">
                      
-                    <CardTitle tag="h5"> Veggin Out Quesadilla $13.00</CardTitle>
+                    <h5> Veggin Out Quesadilla $13.00</h5>
                       <h6 className="card-category text-white opacity-8">
                         2 cheese blend, mushroom, peppers, onions & spinach
                       </h6>
                     </div>
-                  </CardBody>
-                </a>
-              </Card>
-            </Col>
-          </Row>
+                </a></Bounce></div>
+            </Col><Col lg="4"></Col>
+          </Row></center>
         </Container>
       </section>
     </>

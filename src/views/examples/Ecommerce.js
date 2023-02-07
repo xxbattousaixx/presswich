@@ -59,16 +59,16 @@ function Ecommerce() {
               <Row>
                 <Col md="12">
                   <Row>
-                    <Col lg="3" md="6">
+                    <Col lg="6" md="6">
                       <ProductCard1 />
                     </Col>
-                    <Col lg="3" md="6">
+                    <Col lg="6" md="6">
                       <ProductCard2 />
                     </Col>
-                    <Col lg="3" md="6">
+                    <Col lg="6" md="6">
                       <ProductCard3 />
                     </Col>
-                    <Col lg="3" md="6">
+                    <Col lg="6" md="6">
                       <ProductCard4 />
                     </Col>
                     <Col className="ml-auto mr-auto mt-5 text-center" md="3">

@@ -1,7 +1,6 @@
 import React from "react";
 
 // reactstrap components
-import { Container, Row, Button } from "reactstrap";
 
 // Core Components
 import DemoNavbar from "components/navbars/DemoNavbar.js";
@@ -38,6 +37,7 @@ import TooltipsPopovers from "components/index-page/TooltipsPopovers.js";
 import FileUpload from "components/index-page/FileUpload.js";
 import Carousel from "components/index-page/Carousel.js";
 import NucleoIcons from "components/index-page/NucleoIcons.js";
+import { Container, Button, Link } from "react-floating-action-button";
 
 function Index() {
   React.useEffect(() => {
@@ -59,22 +59,24 @@ function Index() {
   });
   return (
     <>
-      <DemoNavbar type="transparent" />
+      <DemoNavbar type="dark" />
       <div className="wrapper">
-        <Button
-          className="btn-icon-only back-to-top show"
-          color="primary"
-          name="button"
-          type="button"
-          onClick={() => {
-            window.scrollTo(0, 0);
-            document.body.scrollTop = 0;
-          }}
-        >
-          <i className="ni ni-bold-up"></i>
-        </Button>
+        
         <HeaderIndex />
-       
+        <Container>
+          <Link
+            href="/contact-us"
+            tooltip="Book online"
+            icon="far fa-sticky-note"
+          />
+          <Link href="/contact-us" tooltip="Call us" icon="fas fa-user-plus" />
+          <Button
+            tooltip="We cater!"
+            icon="fas fa-plus"
+            rotate={true}
+            onClick={() => alert("Call us at 813-724-4100")}
+          />
+        </Container>
         <Footer3 />
       </div>
     </>

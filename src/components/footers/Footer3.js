@@ -40,6 +40,16 @@ function Footer3() {
             <Col md="3" className="text-right">
               <ul className="social-buttons">    
                 <li>
+                    
+                <Button
+                    className="btn-icon"
+                    color="instagram"
+                    href="https://www.instagram.com/wichpressfoodtruck"
+                    size="sm"
+                    target="_blank"
+                  >
+                    <i className="fab fa-instagram"></i>
+                  </Button>
                   <Button
                     className="btn-icon mr-2"
                     color="facebook"
@@ -49,34 +59,23 @@ function Footer3() {
                   >
                     <i className="fab fa-facebook-square"></i>
                   </Button>
-               
                   <Button
                     className="btn-icon"
-                    color="instagram"
-                    href="https://www.instagram.com/wichpressfoodtruck"
+                    color="pinterest"
+                    href="mailto:shawn@wichpressfoodtruck.com"
                     size="sm"
-                    target="_blank"
                   >
-                    <i className="fab fa-instagram"></i>
+                    <i className="fa fa-envelope"></i>
                   </Button>
               <Button
                     className="btn-icon"
-                    color="instagram"
-                    href="https://www.twiter.com/wichpress"
+                    color="twitter"
+                    href="tel:8137244100"
                     size="sm"
-                    target="_blank"
                   >
-                    <i className="fab fa-twitter"></i>
+                    <i className="fa fa-phone"></i>
                   </Button>
-                 <Button
-                    className="btn-icon"
-                    color="instagram"
-                    href="https://www.pinterest.com/wichpress"
-                    size="sm"
-                    target="_blank"
-                  >
-                    <i className="fab fa-pinterest"></i>
-                  </Button>
+            
                 </li>
               </ul>
             </Col>

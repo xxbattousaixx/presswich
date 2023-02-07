@@ -20,6 +20,7 @@ function Accordion1() {
     <>
       <div className="accordion-1">
         <Container>
+        <br/><br/><br/>
           <Row>
             <Col className="mx-auto text-center" md="6">
               <h2 className="title mb-3 mt-5">Frequently asked questions</h2>
@@ -49,17 +50,8 @@ function Accordion1() {
                   </CardHeader>
                   <Collapse isOpen={openedCollapse === "collapse-1"}>
                     <CardBody className="opacity-8">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life
-                      accusamus terry richardson ad squid. 3 wolf moon officia
-                      aute, non cupidatat skateboard dolor brunch. Food truck
-                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                      tempor, sunt aliqua put a bird on it squid single-origin
-                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                      helvetica, craft beer labore wes anderson cred nesciunt
-                      sapiente ea proident. Ad vegan excepteur butcher vice
-                      lomo. Leggings occaecat craft beer farm-to-table, raw
-                      denim aesthetic synth nesciunt you probably haven't heard
-                      of them accusamus labore sustainable VHS.
+                      Call us now at 
++1 (813) 724 4100 to place an order for pickup or catering. You can also leave us a detailed message in the <a href="/contact-us">contact us</a> section.
                     </CardBody>
                   </Collapse>
                 </Card>
@@ -84,17 +76,7 @@ function Accordion1() {
                   </CardHeader>
                   <Collapse isOpen={openedCollapse === "collapse-2"}>
                     <CardBody className="opacity-8">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life
-                      accusamus terry richardson ad squid. 3 wolf moon officia
-                      aute, non cupidatat skateboard dolor brunch. Food truck
-                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                      tempor, sunt aliqua put a bird on it squid single-origin
-                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                      helvetica, craft beer labore wes anderson cred nesciunt
-                      sapiente ea proident. Ad vegan excepteur butcher vice
-                      lomo. Leggings occaecat craft beer farm-to-table, raw
-                      denim aesthetic synth nesciunt you probably haven't heard
-                      of them accusamus labore sustainable VHS.
+                      We accept cash as well as all major credit and debit cards.
                     </CardBody>
                   </Collapse>
                 </Card>
@@ -119,21 +101,11 @@ function Accordion1() {
                   </CardHeader>
                   <Collapse isOpen={openedCollapse === "collapse-3"}>
                     <CardBody className="opacity-8">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life
-                      accusamus terry richardson ad squid. 3 wolf moon officia
-                      aute, non cupidatat skateboard dolor brunch. Food truck
-                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                      tempor, sunt aliqua put a bird on it squid single-origin
-                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                      helvetica, craft beer labore wes anderson cred nesciunt
-                      sapiente ea proident. Ad vegan excepteur butcher vice
-                      lomo. Leggings occaecat craft beer farm-to-table, raw
-                      denim aesthetic synth nesciunt you probably haven't heard
-                      of them accusamus labore sustainable VHS.
+                     All food is cooked to order on a first come, first serve basis. With that in mind, you can order beforehand if you want your food for a certain time.
                     </CardBody>
                   </Collapse>
                 </Card>
-                <Card>
+                {/* <Card>
                   <CardHeader id="headingFour">
                     <h5 className="mb-0">
                       <Button
@@ -167,7 +139,7 @@ function Accordion1() {
                       of them accusamus labore sustainable VHS.
                     </CardBody>
                   </Collapse>
-                </Card>
+                </Card> */}
                 <Card>
                   <CardHeader id="headingFifth">
                     <h5 className="mb-0">
@@ -182,24 +154,14 @@ function Accordion1() {
                         color="link"
                         type="button"
                       >
-                        Where do I find the shipping details?{" "}
+                        Where do I find the food truck today?{" "}
                         <i className="ni ni-bold-down float-right pt-1"></i>
                       </Button>
                     </h5>
                   </CardHeader>
                   <Collapse isOpen={openedCollapse === "collapse-5"}>
                     <CardBody className="opacity-8">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life
-                      accusamus terry richardson ad squid. 3 wolf moon officia
-                      aute, non cupidatat skateboard dolor brunch. Food truck
-                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                      tempor, sunt aliqua put a bird on it squid single-origin
-                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                      helvetica, craft beer labore wes anderson cred nesciunt
-                      sapiente ea proident. Ad vegan excepteur butcher vice
-                      lomo. Leggings occaecat craft beer farm-to-table, raw
-                      denim aesthetic synth nesciunt you probably haven't heard
-                      of them accusamus labore sustainable VHS.
+                     Please visit the <a href="https://streetfoodfinder.com/WichPress" target="_blank">locations page</a> to find our whereabouts today.
                     </CardBody>
                   </Collapse>
                 </Card>

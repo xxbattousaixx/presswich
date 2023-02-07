@@ -46,34 +46,35 @@ function DemoFooter() {
               <Button
                 className="btn-icon-only rounded-circle"
                 color="facebook"
-                id="tooltip844497435"
+                id="tooltip46149983"
                 href="https://facebook.com/wichpressfoodtruck"
               >
                 <span className="btn-inner--icon">
-                  <i className="fab fa-pinterest"></i>
+                  <i className="fab fa-facebook"></i>
                 </span>
               </Button>
                   <Button
                 className="btn-icon-only rounded-circle"
                 color="pinterest"
                 id="tooltip844497435"
-                href="https://pinterest.com/wichpress"
+                href="mailto:shawn@wichpressfoodtruck.com"
               >
                 <span className="btn-inner--icon">
-                  <i className="fab fa-facebook"></i>
+                  <i className="fa fa-envelope"></i>
                 </span>
-              </Button>    <Button
+              </Button>  
+                <Button
                 className="btn-icon-only rounded-circle"
                 color="twitter"
                 id="tooltip844497435"
-                href="https://twitter.com/wichpress"
+                href="tel:8137244100"
               >
                 <span className="btn-inner--icon">
-                  <i className="fab fa-twitter"></i>
+                  <i className="fa fa-phone"></i>
                 </span>
               </Button>
               <UncontrolledTooltip delay={0} target="tooltip844497435">
-                Like us
+                Contact us
               </UncontrolledTooltip>
              
             </Col>

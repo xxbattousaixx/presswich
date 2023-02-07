@@ -139,7 +139,7 @@ function ContactUs() {
       <div className="wrapper"
       style={{
           backgroundImage:
-            "url(" + require("assets/img/vector.jpg") + ")",
+            "url(" + require("assets/img/vector12.jpg") + ")",
         }}>
         <ContactUs4 />
         <div className="main"

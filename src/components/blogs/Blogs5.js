@@ -10,41 +10,44 @@ import {
   Row,
   Col,
 } from "reactstrap";
-
+import ReactRoundedImage from "react-rounded-image";
+import MyPhoto from "assets/img/sections/mark-harrison.jpg";
+import MyPhoto2 from "assets/img/sections/thomas.jpg";
+import MyPhoto3 from "assets/img/sections/odin.jpg";
 function Blogs5() {
   return (
     <>
       <section className="blogs-5">
         <Container>
           <Row>
-            <Col className="mx-auto" md="10">
+            <Col id="drinks" className="mx-auto" md="10">
               <h2 className="title mb-5">Accompaniments:</h2>
               <Row>
                 <Col lg="4" md="6">
-                  <Card className="card-blog card-plain">
-                    <div className="card-image shadow" id="drinks">
+                 
+                    <div className="card-image shadow" >
                       <a  onClick={(e) => e.preventDefault()}>
-                        <img
+                        {/* <img
                           alt="..."
                           className="img rounded"
                           style={{ height: "200px" }}
 
                           src={require("assets/img/sections/mark-harrison.jpg")}
-                        ></img>
+                        ></img> */}
+
+                <ReactRoundedImage roundedColor="lightblue" image={MyPhoto} />
+
                       </a>
                     </div>
-                    <CardBody>
-                      <CardTitle tag="h4">
+                      <h4>
                         <a  onClick={(e) => e.preventDefault()}>
-                          Seasoned Fries $6.00
+                          Seasoned Fries
                         </a>
-                      </CardTitle>
+                      </h4><Col md='3'></Col><Col md='6'>
                       <p className="card-description">
                         Enjoy our classic fries
-                      </p>
-                     
-                    </CardBody>
-                  </Card>
+                      </p></Col>
+                      <Col md='3'></Col>
                 </Col>
                 <Col lg="4" md="6">
                   <Card className="card-blog card-plain">
@@ -62,13 +65,13 @@ function Blogs5() {
                     <CardBody>
                       <CardTitle tag="h4">
                         <a  onClick={(e) => e.preventDefault()}>
-                          Soda or Water $2.00
+                          Soda or Water
                         </a>
-                      </CardTitle>
+                      </CardTitle><Col md='3'></Col><Col md='6'>
                       <p className="card-description">
                       Grab a drink
-                      </p>
-                    
+                      </p></Col>
+                      <Col md='3'></Col>
                     </CardBody>
                   </Card>
                 </Col>
@@ -88,12 +91,12 @@ function Blogs5() {
                     <CardBody>
                       <CardTitle tag="h4">
                         <a  onClick={(e) => e.preventDefault()}>
-                          Churros (2) $6.00
+                          Churros (2)
                         </a>
-                      </CardTitle>
+                      </CardTitle><Col md='3'></Col><Col md='6'>
                       <p className="card-description">
                       Sweet snack consisting of a strip of fried dough dusted with sugar or cinnamon.
-                      </p>
+                      </p></Col><Col md='3'></Col>
                    
                     </CardBody>
                   </Card>

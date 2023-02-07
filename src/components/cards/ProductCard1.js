@@ -1,5 +1,4 @@
 import React from "react";
-
 // reactstrap components
 import {
   Badge,
@@ -16,11 +15,11 @@ import {
 function ProductCard1() {
   return (
     <>
-      <Card className="card-product card-plain">
+      <Card className="card-product card-plain" id="rounded">
         <div className="card-image">
           <Badge color="info">NEW</Badge>
           <a href="#pablo" onClick={(e) => e.preventDefault()}>
-            <img alt="..." src={require("assets/img/pages/tshirt.png")}></img>
+            <img  alt="..." src={require("assets/img/pages/tshirt.png")}></img>
           </a>
         </div>
         <CardBody>

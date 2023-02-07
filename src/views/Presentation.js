@@ -4,11 +4,14 @@ import React from "react";
 // import {
 //
 // } from "reactstrap";
-
+import { Container, Button, Link } from "react-floating-action-button";
 // Core Components
 import DemoNavbar from "components/navbars/DemoNavbar.js";
 import Footer3 from "components/footers/Footer3.js";
 import HeaderPresentation from "components/headers/HeaderPresentation.js";
+import BasicComponents from "components/presentation-page/BasicComponents";
+
+
 // Sections for this page
 
 function Presentation() {
@@ -33,7 +36,23 @@ function Presentation() {
     <>
       <DemoNavbar type="primary" />
       <div className="wrapper">
+        
         <HeaderPresentation />
+        <BasicComponents/>
+          <Container>
+          <Link
+            href="/contact-us"
+            tooltip="Book online"
+            icon="far fa-sticky-note"
+          />
+          <Link href="/contact-us" tooltip="Call us" icon="fas fa-user-plus" />
+          <Button
+            tooltip="We cater!"
+            icon="fas fa-plus"
+            rotate={true}
+            onClick={() => alert("Call us at 813-724-4100")}
+          />
+        </Container>
         <Footer3 />
       </div>
     </>

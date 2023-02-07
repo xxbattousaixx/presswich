@@ -1,11 +1,10 @@
 import React from "react";
-
+import './styles33.css'
 // reactstrap components
 import { Badge, Button, Container, Row, Col } from "reactstrap";
 import Wobble from 'react-reveal/Wobble';
 import Zoom from 'react-reveal/Zoom';
 // Core Components
-
 function HeaderPresentation() {
   return (
     <>
@@ -15,7 +14,7 @@ function HeaderPresentation() {
             className="page-header-image "
             style={{backgroundColor:"limegreen",
               backgroundImage:
-                "url(" + require("assets/img/sections/t1.jpeg") + ")",
+                "url(" + require("assets/img//home.jpg") + ")",
             }}
           ></div></Zoom>
           <Container
@@ -25,27 +24,37 @@ function HeaderPresentation() {
             <div className="col px-0">
               <Row>
                 <Col className="ml-5" lg="4">
-                 <Wobble> <img
+                 {/* <Wobble> <img
                     alt="..."
                     className="img-fluid"
                     src={require("assets/img/brand/blue.png")}
                     style={{ width: "200px" }}
                   ></img>{" "}
-                 
-                  <h className="lead">
+                 </Wobble> */}
+                  <h className="lead text-center">
                    <br></br>
-                   <a href="https://streetfoodfinder.com/WichPress"> <b style={{fontSize:"2rem"}}className="text-warning">WichPress Food Truck</b></a>
-                  </h></Wobble>
+                 <div> <b style={{fontFamily:'Indie Flower', textShadow:"orange 2px 5px", fontSize:"4rem", color:'yellow'}}>WichPress Food Truck</b> </div>
+                  </h>
                   <div className="btn-wrapper mt-5">
                     <Button
-                      className="btn-white btn-icon mb-3 mb-sm-0"
+                      className="btn2 btn-white btn-icon mb-3 mb-sm-0"
                       color="default"
-                      href="/menu#headers"
+                      href="/menu"
                     >
                       <span className="btn-inner--icon">
                         <i className="fas fa-shopping-cart"></i>
                       </span>
                       <span className="btn-inner--text">Full Menu</span>
+                    </Button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <Button
+                      className="btn2 btn-white btn-icon mb-3 mb-sm-0"
+                      color="default"
+                      href="https://streetfoodfinder.com/WichPress"
+                    >
+                      <span className="btn-inner--icon">
+                        <i className="ni ni-map-big"></i>
+                      </span>
+                      <span className="btn-inner--text">Our Locations</span>
                     </Button>
                   </div>
                 </Col>

@@ -63,17 +63,19 @@ function DemoNavbar(props) {
         expand="lg"
         id="dark-navbar-main"
       >
-        <Container>
-        <NavbarBrand className="mr-lg-5" to="/menu" tag={Link}><Lottie 
-	    options={defaultOptions}
-     height='8vh'
-      />
-          </NavbarBrand>
+         
 
+        <Container>
           <NavbarBrand className="mr-lg-5" to="/" tag={Link}>
             HOME
           </NavbarBrand>
-       
+          <NavbarBrand className="mr-lg-5" to="/menu" tag={Link}><Lottie 
+	    options={defaultOptions}
+     height='55px'
+     width='55px'
+      />
+          </NavbarBrand>
+     
           <button
             className="navbar-toggler"
             type="button"
@@ -132,7 +134,7 @@ function DemoNavbar(props) {
                   tag={NavLink}
                 >
                   <i className="ni ni-ui-04 d-lg-none"></i>
-                  <span className="nav-link-inner--text">About Us</span>
+                  <span className="ml-3 nav-link-inner--text">About Us</span>
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-menu-xl">
                   <div className="dropdown-menu-inner">
@@ -156,7 +158,7 @@ function DemoNavbar(props) {
                    
                   </div>
                   <div className="dropdown-menu-footer">
-                    <DropdownItem href="https://streetfoodfinder.com/WichPress"
+                    <DropdownItem href="/locations"
                     target="_blank">
                       <i className="ni ni-map-big"></i> Locations
                     </DropdownItem>
@@ -167,15 +169,16 @@ function DemoNavbar(props) {
               </UncontrolledDropdown>
               <UncontrolledDropdown nav>
                 <DropdownToggle
-                  tag={NavLink}
-                  data-toggle="dropdown"
-                  onClick={(e) => e.preventDefault()}
+                  tag={Link}
+                  className="text-warning"
+                  to="/menu"
                   role="button"
                 >
                   <i className="ni ni-bullet-list-67 d-lg-none"></i>
-                  <span className="nav-link-inner--text">Menu</span>
+                  
+                  <span className="ml-3 nav-link-inner--text">Menu</span>
                 </DropdownToggle>
-                <DropdownMenu aria-labelledby="navbarDropdownMenuLink">
+                {/* <DropdownMenu aria-labelledby="navbarDropdownMenuLink">
                   <DropdownItem tag={Link} to="/menu#favorites">
                     <i className="ni ni-satisfied text-info"></i>
                     Favorites
@@ -193,18 +196,19 @@ function DemoNavbar(props) {
                     Sweet Treats & Drinks
                   </DropdownItem>
                   
-                </DropdownMenu>
+                </DropdownMenu> */}
               </UncontrolledDropdown>
               <UncontrolledDropdown nav>
               <DropdownToggle
                   tag={Link}
-                  
+                  className="text-danger"
                   to="/contact-us"
                   role="button"
-                >
-                  <i className="ni ni-notification-70"></i>
-                  <span className="nav-link-inner--text text-danger">Contact Us</span>
-                  </DropdownToggle>
+                > 
+                  <i className="ni ni-bullet-list-67 d-lg-none"></i>
+
+                  <span className="ml-3 nav-link-inner--text">Contact Us</span>
+                </DropdownToggle>
               </UncontrolledDropdown>
             </Nav>
           </Collapse>
