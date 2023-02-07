@@ -88,7 +88,6 @@ function Blogs4() {
                    <b> <h5>Loaded Fries</h5></b>
                     <Col md='3'></Col><Col md='6'>  
                      <h6 className="card-category text-dark opacity-8">
-                      Fries topped with queso blanco, drizzled with buffalo, barbeque or honey hot sauce<br/>
                       Choose your protein: Chicken, Chicken Bacon, Chicken Fajita, Shredded Pork, Shredded Pork Fajita</h6>
                       </Col><Col md='3'></Col>
                    
