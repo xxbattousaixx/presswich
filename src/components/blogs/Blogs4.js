@@ -52,7 +52,7 @@ function Blogs4() {
 
                     <h6 className="card-category text-dark opacity-8">
                         Beef / Beef & Cheese
-                      </h6>
+                      </h6><br/><br/><br/>
                       </Col><Col md='3'></Col>
 
                     </div>
@@ -88,7 +88,7 @@ function Blogs4() {
                    <b> <h5>Loaded Fries</h5></b>
                     <Col md='3'></Col><Col md='6'>  
                      <h6 className="card-category text-dark opacity-8">
-                      Choose your protein: Chicken, Chicken Bacon, Chicken Fajita, Shredded Pork, Shredded Pork Fajita</h6>
+                      Choose your protein: Chicken, Chicken Bacon, Chicken Fajita, Shredded Pork, Shredded Pork Fajita</h6><br/><br/><br/>
                       </Col><Col md='3'></Col>
                    
                     </div>
@@ -114,7 +114,7 @@ function Blogs4() {
 
                       <h6 className="card-category text-dark opacity-8">
                        2 flour tortillas, ground beef, topped with lettuce and cheese, fries & side salsa
-                      </h6>
+                      </h6><br/><br/><br/>
                       </Col><Col md='3'></Col>
                       
                     </div>
@@ -150,7 +150,7 @@ function Blogs4() {
                    
                       <h6 className="card-category text-dark opacity-8">
                         Pressed Cuban bread with Latin pork, cheese, ham, pickles and mayo/mustard
-                      </h6>
+                      </h6><br/><br/><br/>
                       </Col><Col md='3'></Col>
                      
                     </div>
@@ -177,7 +177,7 @@ function Blogs4() {
 
                       <h6 className="card-category text-dark opacity-8">
                         Pressed Cuban bread with Latin pork and onions
-                      </h6>
+                      </h6><br/><br/><br/>
                       </Col><Col md='3'></Col>
 
                     </div>
@@ -203,8 +203,9 @@ function Blogs4() {
 
                       <h6 className="card-category text-dark opacity-8">
                         Pressed Cuban bread with ham and American/Swiss cheese
-                      </h6>
-                      </Col><Col md='3'></Col>
+                      </h6><br/><br/><br/>
+                                            </Col><Col md='3'></Col>
+
 
                     </div>
                 </a></LightSpeed></div>
@@ -235,8 +236,9 @@ function Blogs4() {
 
                       <h6 className="card-category text-dark opacity-8">
                         2 cheese blend, grilled chicken or pork, sauteed peppers and onions
-                      </h6>
-                      </Col><Col md='3'></Col>
+                      </h6><br/><br/><br/>
+                                           </Col><Col md='3'></Col>
+
 
                     </div>
                 </a></LightSpeed></div>
@@ -256,10 +258,13 @@ function Blogs4() {
                 <a  onClick={(e) => e.preventDefault()}>
                     <div className="content-bottom">
                     
-                    <h5> Chicken Bacon Ranch Quesadilla $13.00</h5>
-                      <h6 className="card-category text-white opacity-8">
+                   <b> <h5> Chicken Bacon Ranch Quesadilla</h5></b>
+<Col md='3'></Col><Col md='6'>  
+                      <h6 className="card-category text-dark opacity-8">
                         2 cheese blend, grilled chicken, bacon w/ranch
-                      </h6>
+                      </h6><br/><br/><br/>
+                       </Col><Col md='3'></Col>
+
                     </div>
                 </a></Bounce></div>
             </Col>
@@ -278,10 +283,13 @@ function Blogs4() {
                 <a  onClick={(e) => e.preventDefault()}>
                     <div className="content-bottom">
                       
-                    <h5> Honey Hot Chicken Quesadilla $13.00</h5>
-                      <h6 className="card-category text-white opacity-8">
+                   <b> <h5> Honey Hot Chicken Quesadilla</h5></b>
+<Col md='3'></Col><Col md='6'>  
+                      <h6 className="card-category text-dark opacity-8">
                         2 cheese blend, grilled chicken, honey hot sauce
-                      </h6>
+                      </h6><br/><br/><br/>
+                       </Col><Col md='3'></Col>
+
                     </div>
                 </a></LightSpeed></div>
             </Col>
@@ -300,10 +308,13 @@ function Blogs4() {
                 <a  onClick={(e) => e.preventDefault()}>
                     <div className="content-bottom">
                       
-                    <h5> LatinPork Quesadilla $13.00</h5>
-                      <h6 className="card-category text-white opacity-8">
+                 <b>   <h5> Latin Pork Quesadilla</h5></b>
+<Col md='3'></Col><Col md='6'>  
+                      <h6 className="card-category text-dark opacity-8">
                         2 cheese blend with Latin pork
-                      </h6>
+                      </h6><br/><br/><br/>
+                      </Col><Col md='3'></Col>
+
                     </div>
                 </a></LightSpeed></div>
             </Col>
@@ -322,10 +333,13 @@ function Blogs4() {
                 <a  onClick={(e) => e.preventDefault()}>
                     <div className="content-bottom">
                      
-                    <h5> Chicken Pesto Quesadilla $13.00</h5>
-                      <h6 className="card-category text-white opacity-8">
+                 <b>   <h5> Chicken Pesto Quesadilla</h5></b>
+<Col md='3'></Col><Col md='6'>  
+                      <h6 className="card-category text-dark opacity-8">
                         Mozzarella cheese, grilled chicken, onion with basil pesto
-                      </h6>
+                      </h6><br/><br/><br/>
+                       </Col><Col md='3'></Col>
+
                     </div>
                 </a></Bounce></div>
             </Col>
@@ -344,10 +358,13 @@ function Blogs4() {
                 <a  onClick={(e) => e.preventDefault()}>
                     <div className="content-bottom">
                      
-                    <h5> Buffalo Chicken Quesadilla $13.00</h5>
-                      <h6 className="card-category text-white opacity-8">
+                  <b>  <h5> Buffalo Chicken Quesadilla</h5> </b>
+<Col md='3'></Col><Col md='6'>  
+                      <h6 className="card-category text-dark opacity-8">
                         2 cheese blend, grilled chicken, buffalo wing sauce w/ranch
-                      </h6>
+                      </h6><br/><br/><br/>
+                      </Col><Col md='3'></Col>
+ 
                     </div>
                 </a></LightSpeed></div>
             </Col>
@@ -368,10 +385,13 @@ function Blogs4() {
                 <a  onClick={(e) => e.preventDefault()}>
                     <div className="content-bottom">
                      
-                    <h5> Barbeque Quesadilla $13.00</h5>
-                      <h6 className="card-category text-white opacity-8">
+                 <b>   <h5> Barbeque Quesadilla</h5></b>
+<Col md='3'></Col><Col md='6'>  
+                      <h6 className="card-category text-dark opacity-8">
                         2 cheese blend, grilled chicken or pork, sauteed onions w/barbeque sauce
-                      </h6>
+                      </h6><br/><br/><br/>
+                      </Col><Col md='3'></Col>
+
                     </div>
                 </a></LightSpeed></div>
             </Col>
@@ -390,10 +410,13 @@ function Blogs4() {
                 <a  onClick={(e) => e.preventDefault()}>
                     <div className="content-bottom">
                     
-                    <h5> Chicken Quesadilla $13.00</h5>
-                      <h6 className="card-category text-white opacity-8">
+                  <b>  <h5> Chicken Quesadilla</h5></b>
+<Col md='3'></Col><Col md='6'>  
+                      <h6 className="card-category text-dark opacity-8">
                         2 cheese blend, grilled chicken
-                      </h6>
+                      </h6><br/><br/><br/>
+                      </Col><Col md='3'></Col>
+
                     </div>
                 </a></Bounce></div>
             </Col>
@@ -412,10 +435,13 @@ function Blogs4() {
                 <a  onClick={(e) => e.preventDefault()}>
                     <div className="content-bottom">
                       
-                    <h5> Cheese Quesadilla $13.00</h5>
-                      <h6 className="card-category text-white opacity-8">
+                 <b>   <h5> Cheese Quesadilla</h5></b>
+<Col md='3'></Col><Col md='6'>  
+                      <h6 className="card-category text-dark opacity-8">
                         2 cheese blend
-                      </h6>
+                      </h6><br/><br/><br/>
+                      </Col><Col md='3'></Col>
+
                     </div>
                 </a></LightSpeed></div>
             </Col><Col lg="4"></Col>
@@ -434,10 +460,13 @@ function Blogs4() {
                 <a  onClick={(e) => e.preventDefault()}>
                     <div className="content-bottom">
                      
-                    <h5> Veggin Out Quesadilla $13.00</h5>
-                      <h6 className="card-category text-white opacity-8">
+                  <b>  <h5> Veggin Out Quesadilla </h5></div>
+<Col md='3'></Col><Col md='6'>  
+                      <h6 className="card-category text-dark opacity-8">
                         2 cheese blend, mushroom, peppers, onions & spinach
-                      </h6>
+                      </h6><br/><br/><br/>
+                      </Col><Col md='3'></Col>
+
                     </div>
                 </a></Bounce></div>
             </Col><Col lg="4"></Col>
