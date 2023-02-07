@@ -12,16 +12,14 @@ import {
     Container
   } from "reactstrap";
 // Core Components
-
+import Testimonials2 from "components/testimonials/Testimonials2.js";
 function Locations() {
   
   return (
     <> 
     <div className="page-header" style={{backgroundColor:'gold'}}>
       <br/><br/><br/>
-                    <Row><div className="ml-4"><Col md="6">  <b style={{fontSize:"2rem"}}className="text-warning">WichPress Food Truck Locations Calendar</b>
-       </Col> </div><div className="mr-4"><Col md='6'>XXXXXXXXX</Col></div> </Row>
-          
+                   <Testimonials2/>
    
         </div>
     </>
