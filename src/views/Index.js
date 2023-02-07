@@ -63,13 +63,14 @@ function Index() {
       <div className="wrapper">
         
         <HeaderIndex />
-        <Container>
+       <Container>
           <Link
             href="/contact-us"
             tooltip="Book online"
             icon="far fa-sticky-note"
           />
-          <Link href="/contact-us" tooltip="Call us" icon="fas fa-user-plus" />
+          <Link  href="mailto:shawn@wichpressfoodtruck.com" tooltip="Call us" icon="fa fa-phone" />
+    <Link href="tel:8137244100" tooltip="Call us" icon="fa fa-envelope" />
           <Button
             tooltip="We cater!"
             icon="fas fa-plus"
