@@ -45,17 +45,8 @@ function HeaderPresentation() {
                         <i className="fas fa-shopping-cart"></i>
                       </span>
                       <span className="btn-inner--text">Full Menu</span>
-                    </Button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <Button
-                      className="btn2 btn-white btn-icon mb-3 mb-sm-0"
-                      color="default"
-                      href="https://streetfoodfinder.com/WichPress"
-                    >
-                      <span className="btn-inner--icon">
-                        <i className="ni ni-map-big"></i>
-                      </span>
-                      <span className="btn-inner--text">Our Locations</span>
                     </Button>
+
                   </div>
                 </Col>
               </Row>
