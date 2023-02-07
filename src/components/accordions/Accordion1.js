@@ -55,56 +55,8 @@ function Accordion1() {
                     </CardBody>
                   </Collapse>
                 </Card>
-                <Card>
-                  <CardHeader id="headingTwo">
-                    <h5 className="mb-0">
-                      <Button
-                        aria-expanded={openedCollapse === "collapse-2"}
-                        onClick={() =>
-                          setOpenedCollapse(
-                            openedCollapse === "collapse-2" ? "" : "collapse-2"
-                          )
-                        }
-                        className="w-100 text-primary text-left collapsed"
-                        color="link"
-                        type="button"
-                      >
-                        How can i make the payment?{" "}
-                        <i className="ni ni-bold-down float-right pt-1"></i>
-                      </Button>
-                    </h5>
-                  </CardHeader>
-                  <Collapse isOpen={openedCollapse === "collapse-2"}>
-                    <CardBody className="opacity-8">
-                      We accept cash as well as all major credit and debit cards.
-                    </CardBody>
-                  </Collapse>
-                </Card>
-                <Card>
-                  <CardHeader id="headingThree">
-                    <h5 className="mb-0">
-                      <Button
-                        aria-expanded={openedCollapse === "collapse-3"}
-                        onClick={() =>
-                          setOpenedCollapse(
-                            openedCollapse === "collapse-3" ? "" : "collapse-3"
-                          )
-                        }
-                        className="w-100 text-primary text-left collapsed"
-                        color="link"
-                        type="button"
-                      >
-                        How much time does it take to receive the order?{" "}
-                        <i className="ni ni-bold-down float-right pt-1"></i>
-                      </Button>
-                    </h5>
-                  </CardHeader>
-                  <Collapse isOpen={openedCollapse === "collapse-3"}>
-                    <CardBody className="opacity-8">
-                     All food is cooked to order on a first come, first serve basis. With that in mind, you can order beforehand if you want your food for a certain time.
-                    </CardBody>
-                  </Collapse>
-                </Card>
+               
+              
                 {/* <Card>
                   <CardHeader id="headingFour">
                     <h5 className="mb-0">
