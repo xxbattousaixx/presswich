@@ -88,6 +88,7 @@ function DemoNavbar(props) {
             navbar
             toggler="#navbar_global"
             isOpen={collapseOpen}
+            className='bg-dark'
           >
             <div className="navbar-collapse-header">
               <Row>
