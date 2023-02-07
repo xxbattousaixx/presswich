@@ -22,19 +22,15 @@ const items = [
             <i className="fa fa-quote-right"></i>
           </div>
           <p className="description text-white">
-            It really matters and then like it really doesn’t matter. What
-            matters is the people who are sparked by it. And the people who are
-            like offended by it, it doesn’t matter. Because it's about
-            motivating the doers. Because I’m here to follow my dreams and
-            inspire other people to follow their dreams.
+            This website is used for bookings...
           </p>
           <div className="author">
             <img
               alt="..."
               className="avatar img-raised"
-              src={require("assets/img/faces/team-5.jpg")}
+              src={require("assets/img/brand/blue.png")}
             ></img>
-            <span>Mike John</span>
+            <span>WHICHPRESS FOOD TRUCK</span>
           </div>
         </div>
         <Card className="card-blog card-background" data-animation={true}>
@@ -50,11 +46,10 @@ const items = [
               <Button
                 className="btn-round btn-simple btn-neutral"
                 color="default"
-                href="#pablo"
-                onClick={(e) => e.preventDefault()}
+                href="https://streetfoodfinder.com/wichpress"
               >
                 <i className="ni ni-book-bookmark"></i>
-                Read more
+                Find us!
               </Button>
             </div>
           </CardBody>
@@ -73,19 +68,15 @@ const items = [
             <i className="fa fa-quote-right"></i>
           </div>
           <p className="description text-white">
-            Take up one idea. Make that one idea your life - think of it, dream
-            of it, live on that idea. Let the brain, muscles, nerves, every part
-            of your body, be full of that idea, and just leave every other idea
-            alone. This is the way to success. A single rose can be my garden...
-            a single friend, my world.
+            This website is used for locations...
           </p>
           <div className="author">
             <img
               alt="..."
               className="avatar img-raised"
-              src={require("assets/img/faces/team-3.jpg")}
+              src={require("assets/img/brand/blue.png")}
             ></img>
-            <span>Andrew Lino</span>
+            <span>WICHPRESS FOOD TRUCK</span>
           </div>
         </div>
         <Card className="card-blog card-background" data-animation={true}>
@@ -101,11 +92,10 @@ const items = [
               <Button
                 className="btn-round btn-simple btn-neutral"
                 color="default"
-                href="#pablo"
-                onClick={(e) => e.preventDefault()}
+                href="https://streetfoodfinder.com/wichpress"
               >
                 <i className="ni ni-book-bookmark"></i>
-                Read more
+                Find Us!
               </Button>
             </div>
           </CardBody>
@@ -139,7 +129,7 @@ function Testimonials2() {
         <Container>
           <Row>
             <Col className="ml-auto mr-auto text-center" md="6">
-              <h2 className="title">What Clients Say</h2>
+              <h2 className="title">OUR LOCATIONS THIS WEEK</h2>
             </Col>
           </Row>
           <Row>
