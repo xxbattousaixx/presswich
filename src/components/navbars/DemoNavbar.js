@@ -129,7 +129,7 @@ function DemoNavbar(props) {
               <UncontrolledDropdown nav>
                 <DropdownToggle
                   data-toggle="dropdown"
-                  
+                  className="text-white"
                   onClick={(e) => e.preventDefault()}
                   role="button"
                   tag={NavLink}
@@ -171,7 +171,7 @@ function DemoNavbar(props) {
               <UncontrolledDropdown nav>
                 <DropdownToggle
                   tag={Link}
-                  className="text-warning"
+                  className="text-white"
                   to="/menu"
                   role="button"
                 >
@@ -202,7 +202,7 @@ function DemoNavbar(props) {
               <UncontrolledDropdown nav>
               <DropdownToggle
                   tag={Link}
-                  className="text-danger"
+                  className="text-white"
                   to="/contact-us"
                   role="button"
                 > 
