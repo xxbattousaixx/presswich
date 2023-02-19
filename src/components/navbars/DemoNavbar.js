@@ -21,6 +21,7 @@ import {
   Row,
   Col,
 } from "reactstrap";
+import './styles99.css'
 
 function DemoNavbar(props) {
   const defaultOptions = {
@@ -88,7 +89,6 @@ function DemoNavbar(props) {
             navbar
             toggler="#navbar_global"
             isOpen={collapseOpen}
-            className='bg-dark'
           >
             <div className="navbar-collapse-header">
               <Row>
@@ -129,13 +129,13 @@ function DemoNavbar(props) {
               <UncontrolledDropdown nav>
                 <DropdownToggle
                   data-toggle="dropdown"
-                  className="text-white"
+                  className="text-primary"
                   onClick={(e) => e.preventDefault()}
                   role="button"
                   tag={NavLink}
                 >
-                  <i className="ni ni-ui-04 d-lg-none"></i>
-                  <span className="ml-3 nav-link-inner--text">About Us</span>
+                  <i className="ni ni-ui-04 d-lg-none text-primary"></i>
+                  <span className="ml-3 nav-link-inner--text text-primary">About Us</span>
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-menu-xl">
                   <div className="dropdown-menu-inner">
@@ -160,7 +160,7 @@ function DemoNavbar(props) {
                   </div>
                   <div className="dropdown-menu-footer">
                     <DropdownItem href="/locations"
-                    target="_blank">
+                    >
                       <i className="ni ni-map-big"></i> FIND US AT OUR LOCATION NOW
                     </DropdownItem>
                 
@@ -171,13 +171,13 @@ function DemoNavbar(props) {
               <UncontrolledDropdown nav>
                 <DropdownToggle
                   tag={Link}
-                  className="text-white"
+                  className="text-primary"
                   to="/menu"
                   role="button"
                 >
                   <i className="ni ni-bullet-list-67 d-lg-none"></i>
                   
-                  <span className="ml-3 nav-link-inner--text">Menu</span>
+                  <span className="ml-3 nav-link-inner--text text-primary">Menu</span>
                 </DropdownToggle>
                 {/* <DropdownMenu aria-labelledby="navbarDropdownMenuLink">
                   <DropdownItem tag={Link} to="/menu#favorites">
@@ -202,7 +202,7 @@ function DemoNavbar(props) {
               <UncontrolledDropdown nav>
               <DropdownToggle
                   tag={Link}
-                  className="text-white"
+                  className="text-primary"
                   to="/contact-us"
                   role="button"
                 > 

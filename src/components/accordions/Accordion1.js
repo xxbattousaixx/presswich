@@ -24,11 +24,26 @@ function Accordion1() {
         <br/><br/><br/>
           <Row>
             <Col className="mx-auto text-center" md="6">
-              <h2 className="title mb-3 mt-5">Frequently asked questions</h2>
+              {/* <h2 className="title mb-3 mt-5">Frequently asked questions</h2> */}
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
             </Col>
           </Row>
           <Row>
+            
             <Col className="ml-auto" md="12">
+            <br/>
+            <br/>
+              <br/>
+              <br/>  <br/>
+              <br/>
+              <br/>  <br/>
+              
               <div className="accordion" id="accordionExample">
                 <Card>
                   <CardHeader id="headingOne">
@@ -51,8 +66,7 @@ function Accordion1() {
                   </CardHeader>
                   <Collapse isOpen={openedCollapse === "collapse-1"}>
                     <CardBody className="opacity-8">
-                      Call us now at 
-+1 (813) 724 4100 to place an order for pickup or catering. You can also leave us a detailed message in the <a href="/contact-us">contact us</a> section.
+                      Visit our <a href="/locations">locations and ordering</a> page. You can also leave us a detailed message in the <a href="/contact-us">contact us</a> section.
                     </CardBody>
                   </Collapse>
                 </Card>
@@ -114,7 +128,7 @@ function Accordion1() {
                   </CardHeader>
                   <Collapse isOpen={openedCollapse === "collapse-5"}>
                     <CardBody className="opacity-8">
-                     Please visit the <a href="https://streetfoodfinder.com/WichPress" target="_blank">locations page</a> to find our whereabouts today.
+                     Please visit the <a href="/locations" target="_blank">locations page</a> to find our whereabouts today.
                     </CardBody>
                   </Collapse>
                 </Card>

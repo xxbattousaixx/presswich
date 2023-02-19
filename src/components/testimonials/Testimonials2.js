@@ -128,7 +128,7 @@ function Testimonials2() {
       <div className="testimonials-2">
         <Container>
           <Row>
-            <Col className="ml-auto mr-auto text-center" md="6">
+            <Col className="ml-auto mr-auto text-center" md="12">
               <h2 className="title">OUR LOCATIONS THIS WEEK</h2>
             </Col>
           </Row>
@@ -179,6 +179,7 @@ function Testimonials2() {
               </a>
             </Carousel>
           </Row>
+          <br/><br/><br/><br/><br/>
         </Container>
       </div>
     </>

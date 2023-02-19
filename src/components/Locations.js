@@ -12,16 +12,15 @@ import {
     Container
   } from "reactstrap";
 // Core Components
-import Testimonials2 from "components/testimonials/Testimonials2.js";
+import Blogs2 from "components/blogs/Blogs2.js";
 function Locations() {
   
   return (
     <> 
-    <div className="page-header" style={{backgroundColor:'gold'}}>
       <br/><br/><br/>
-                   <Testimonials2/>
+      <br/><br/><br/>
+                   <Blogs2/>
    
-        </div>
     </>
   );
 }

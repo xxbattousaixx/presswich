@@ -12,9 +12,9 @@ function HeaderPresentation() {
         <div className="page-header">
         <Zoom>  <div
             className="page-header-image "
-            style={{backgroundColor:"limegreen",
+            style={{backgroundColor:"red",
               backgroundImage:
-                "url(" + require("assets/img//home.jpg") + ")",
+                "url(" + require("assets/img/sections/truck99.jpg") + ")",
             }}
           ></div></Zoom>
           <Container

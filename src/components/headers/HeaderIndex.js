@@ -20,8 +20,7 @@ function HeaderIndex() {
       <div className="section section-hero section-shaped">
         <div
       style={{
-          backgroundImage:
-            "url(" + require("assets/img/vector10.jpg") + ")",
+          backgroundColor:'#cceeff'
         }} 
         className="page-header">
           {/* <img
@@ -36,18 +35,31 @@ function HeaderIndex() {
               <Row className="align-items-center justify-content-center">
                 <Col className="text-center" lg="10">
                 <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                <br/><br/><br/><br/><br/><br/>
                  <Zoom> <img
                     alt="..."
                     className="img-fluid"
                     src={require("assets/img/brand/blue.png")}
-                    style={{ width: "250px" }}
+                    style={{ width: "15vw" }}
                   /></Zoom>
                  
-                  <p style={{fontFamily:'Indie Flower', fontSize:"2rem", color:'cyan'}} className="lead text-primary">
-                    <b className="display-3 text-primary">Welcome</b>
-                    <br></br><b className="display-3 text-primary">
-brWe are here to serve you</b><br/><br/>
-                   <b  className='text-primary'> Our food truck has been in business for over a decade and we are dedicated to serving your every food need.</b>
+                  <p style={{fontFamily:'Indie Flower', fontSize:"1.1rem", color:'cyan'}} className="lead text-primary">
+                    {/* <b className="display-3 text-primary">Welcome</b> */}
+                    {/* <br/><br/> <b className="display-3 text-primary">
+We are here to serve you</b><br/><br/> */}
+                   <b  className='text-primary'> Shawn and Kim Easter always dreamed of owning a sandwich shop on the beach. So, instead of being stuck on one beach they decided to become a mobile sandwich shop on the many tropical beaches along the Florida coastline and became Wich Press Food Truck.
+<br/>
+Originally from Arizona, Shawn and Kim where the chefs for all of their family and friends. After constantly being told they should take their food to a restaurant; they decided to make their dream a reality. Shawn sold his landscaping company of 17 years and together they gathered all their possessions that would fit in a car and moved to Tampa Bay.
+<br/>
+
+Since 2018, Wich Press Food Truck has been selling award winning Cubans, quesadillas, empanadas, and tacos throughout the bay area. Wich press is obsessed with high quality ingredients, locally sourced and a commitment to exemplary service and freshness.
+<br/>
+
+We are available for all types of events ranging from birthdays, weddings, parties, corporate events, festivals, graduations, reunions and more. We can cater to any occasion from Latin Cuisine, American and Mexican. Come to our next stop or bring us to you, either way you will leave happy, full, and impressed by Wich Press.</b>
+<br/>
+<br/>
+              <br/>
+              
                   </p>
 {/* <RubberBand>
                   <img
@@ -75,6 +87,7 @@ brWe are here to serve you</b><br/><br/>
                     <p className="legend"><a href='/contact-us'> Contact Us</a></p>
                 </div>
             </Carousel>
+            
                   <div className="btn-wrapper mt-5">
                    
                   </div>

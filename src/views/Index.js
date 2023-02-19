@@ -70,7 +70,7 @@ function Index() {
             icon="far fa-sticky-note"
           />
           <Link  href="mailto:shawn@wichpressfoodtruck.com" tooltip="Call us" icon="fa fa-phone" />
-    <Link href="tel:8137244100" tooltip="Call us" icon="fa fa-envelope" />
+    <Link href="tel:8137244100" tooltip="Email us" icon="fa fa-envelope" />
           <Button
             tooltip="We cater!"
             icon="fas fa-plus"

@@ -35,7 +35,7 @@ function RegisterPage() {
     };
   }, []);
   return (
-    <>
+    <><div style={{backgroundColor:'#D8DCD6'}}>
       <DemoNavbar type="dark" />
       {/* <div className="wrapper">
         <div className="page-header bg-default">
@@ -52,22 +52,12 @@ function RegisterPage() {
           </div>
      
    
-        </div> </div> */}<Locations/>
-         <Container>
-          <Link
-            href="/contact-us"
-            tooltip="Book online"
-            icon="far fa-sticky-note"
-          />
-          <Link  href="mailto:shawn@wichpressfoodtruck.com" tooltip="Call us" icon="fa fa-phone" />
-    <Link href="tel:8137244100" tooltip="Call us" icon="fa fa-envelope" />
-          <Button
-            tooltip="We cater!"
-            icon="fas fa-plus"
-            rotate={true}
-            onClick={() => alert("Call us at 813-724-4100")}
-          />
-        </Container>
+        </div> </div> */}<Col md='12'><Locations/></Col>
+         <br/>
+       <br/>
+       <br/><br/>
+       </div>
+      
         <Footer3 />
      
     </>

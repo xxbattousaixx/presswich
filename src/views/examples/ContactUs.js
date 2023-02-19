@@ -138,8 +138,7 @@ function ContactUs() {
       <DemoNavbar type="dark" />
       <div className="wrapper"
       style={{
-          backgroundImage:
-            "url(" + require("assets/img/vector12.jpg") + ")",
+          backgroundColor:"#FF99CE"
         }}>
         <ContactUs4 />
         <div className="main"

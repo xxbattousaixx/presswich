@@ -293,7 +293,7 @@ function ContactUs4() {
                         Contact information
                       </CardTitle></center>
                       <div className="info info-horizontal mt-lg-5">
-                      <a href="https://streetfoodfinder.com/WichPress">     <div className="icon icon-shape bg-white rounded-circle text-info">
+                      <a href="/locations">     <div className="icon icon-shape bg-white rounded-circle text-info">
                           <i className="ni ni-square-pin"></i>
                         </div>
                         <div className="description">

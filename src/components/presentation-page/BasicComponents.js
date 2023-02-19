@@ -28,11 +28,11 @@ function BasicComponents() {
             </Col>
             <Col lg="6" md="12">
               <div className="image-container">
-              <div className="pr-3"> <img
+              {/* <div className="pr-3"> <img
                   alt="..."
                   className="table-img"
                   src={require("assets/img/presentation-page/logo.png")}
-                ></img></div>
+                ></img></div> */}
                 <a href="/menu"><img
                   alt="..."
                   className="coloured-card-btn-img"
