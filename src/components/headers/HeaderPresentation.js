@@ -1,5 +1,7 @@
 import React from "react";
 import './styles33.css'
+import ReactDOM from 'react-dom';
+import LazyLoad from 'react-lazyload';
 // reactstrap components
 import { Badge, Button, Container, Row, Col } from "reactstrap";
 import Wobble from 'react-reveal/Wobble';
@@ -9,6 +11,7 @@ function HeaderPresentation() {
   return (
     <>
       <div className="section-hero section-shaped">
+        <LazyLoad>
         <div className="page-header">
         <Zoom>  <div
             className="page-header-image "
@@ -52,7 +55,7 @@ function HeaderPresentation() {
               </Row>
             </div>
           </Container>
-        </div>
+        </div></LazyLoad>
       </div>
     </>
   );

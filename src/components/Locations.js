@@ -17,10 +17,14 @@ function Locations() {
   
   return (
     <> 
+    <div style={{
+                    backgroundImage:
+                      "url(" + require("assets/img/boi.gif") + ")",
+                  }} >
       <br/><br/><br/>
       <br/><br/><br/>
                    <Blogs2/>
-   
+                   </div>
     </>
   );
 }

@@ -16,6 +16,8 @@ import MyPhoto2 from "assets/img/sections/pawel-nolbert.jpg";
 import MyPhoto3 from "assets/img/sections/twk-tt.jpeg";
 import Bounce from 'react-reveal/Bounce';
 import LightSpeed from 'react-reveal/LightSpeed';
+import LazyLoad from 'react-lazyload';
+import {Helmet} from "react-helmet";
 
 function Blogs1() {
   return (
@@ -31,7 +33,7 @@ function Blogs1() {
             <Col lg="4">
         <div id='zoom'> <LightSpeed left>
 
-            <ReactRoundedImage image={MyPhoto2} />
+          <LazyLoad>  <ReactRoundedImage image={MyPhoto2} /></LazyLoad> 
          
 
                 {/* <div
@@ -44,6 +46,16 @@ function Blogs1() {
                 <a href="#pablo" onClick={(e) => e.preventDefault()}>
                 
                     <div className="content-bottom">
+                      <Helmet>
+                      <h6 className="card-category text-dark opacity-8">
+                        Churros (2)
+                      </h6>
+                      
+                      <h5>Fried dough dusted with sugar or cinnamon.</h5>
+
+<meta name="description" content="churros" />
+                      
+                      </Helmet>
                       <h6 className="card-category text-dark opacity-8">
                         Churros (2)
                       </h6>
@@ -57,7 +69,7 @@ function Blogs1() {
             <Col lg="4">
         <div id='zoom'> <Bounce top>
 
-            <ReactRoundedImage roundedColor="green" image={MyPhoto3} />
+        <LazyLoad>     <ReactRoundedImage roundedColor="green" image={MyPhoto3} /></LazyLoad> 
            
                 {/* <div
                   className="full-background"
@@ -68,6 +80,15 @@ function Blogs1() {
                 ></div> */}
                 <a href="#pablo" onClick={(e) => e.preventDefault()}>
                     <div className="content-bottom">
+                      <Helmet>
+                      <h6 className="card-category text-dark opacity-8">
+                      Soda or Water
+                      </h6>
+                      <h5>Grab a drink</h5>
+
+<meta name="description" content="Serving coca-cola products" />
+                      
+                      </Helmet>
                       <h6 className="card-category text-dark opacity-8">
                       Soda or Water
                       </h6>
@@ -78,7 +99,7 @@ function Blogs1() {
             <Col lg="4">
         <div id='zoom'> <LightSpeed right>
           
-                <ReactRoundedImage image={MyPhoto} />
+        <LazyLoad>  <ReactRoundedImage image={MyPhoto} /></LazyLoad> 
 
                 {/* <div
                   className="full-background"
@@ -89,7 +110,18 @@ function Blogs1() {
                 ></div> */}
                 <a href="#pablo" onClick={(e) => e.preventDefault()}>
                     <div className="content-bottom">
+                      <Helmet>
                     <b>  <h6 className="card-category text-dark opacity-8">
+                        Seasoned Fries
+                      </h6></b>
+                      <h5 className="text-dark">
+                        Instant Classic
+                      </h5>
+
+<meta name="description" content="Loaded seasoned fries" />
+                      
+                      </Helmet>
+                      <b>  <h6 className="card-category text-dark opacity-8">
                         Seasoned Fries
                       </h6></b>
                       <h5 className="text-dark">

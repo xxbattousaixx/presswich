@@ -134,7 +134,7 @@ function DemoNavbar(props) {
                   role="button"
                   tag={NavLink}
                 >
-                  <i className="ni ni-ui-04 d-lg-none text-primary"></i>
+                  <i className="ni ni-shop d-lg-none text-primary"></i>
                   <span className="ml-3 nav-link-inner--text text-primary">About Us</span>
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-menu-xl">
@@ -203,10 +203,22 @@ function DemoNavbar(props) {
               <DropdownToggle
                   tag={Link}
                   className="text-primary"
+                  to="/catering"
+                  role="button"
+                > 
+                  <i className="ni ni-delivery-fast d-lg-none"></i>
+
+                  <span className="ml-3 nav-link-inner--text">Catering</span>
+                </DropdownToggle>
+              </UncontrolledDropdown>
+              <UncontrolledDropdown nav>
+              <DropdownToggle
+                  tag={Link}
+                  className="text-primary"
                   to="/contact-us"
                   role="button"
                 > 
-                  <i className="ni ni-bullet-list-67 d-lg-none"></i>
+                  <i className="ni ni-active-40 d-lg-none"></i>
 
                   <span className="ml-3 nav-link-inner--text">Contact Us</span>
                 </DropdownToggle>

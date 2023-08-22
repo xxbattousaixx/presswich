@@ -153,7 +153,7 @@ function ContactUs4() {
                        <input
                       type="hidden"
                       name="access_token"
-                      value="63yiwt3vt3p7kwh8m7zcdmd0"
+                      value="fmin2luwi0f9iujitblnnpr6"
                     />
                     <input
                       type="hidden"
@@ -271,7 +271,7 @@ function ContactUs4() {
                           <input
                         type="hidden"
                         name="access_token"
-                        value="63yiwt3vt3p7kwh8m7zcdmd0"
+                        value="fmin2luwi0f9iujitblnnpr6"
                       />
                             <Button
                               className="pull-right"
@@ -289,7 +289,7 @@ function ContactUs4() {
                   </Col>
                   <Col className="pl-md-0" lg="4" md="5">
                     <div className="info text-left bg-info">
-                    <center>  <CardTitle className="text-white" tag="h4">
+                    <center>  <CardTitle className="text-warning" tag="h4">
                         Contact information
                       </CardTitle></center>
                       <div className="info info-horizontal mt-lg-5">
@@ -297,7 +297,7 @@ function ContactUs4() {
                           <i className="ni ni-square-pin"></i>
                         </div>
                         <div className="description">
-                          <p className="info-title text-white mt-2">
+                          <p className="info-title text-warning mt-2">
                           <center>Click Here<br/>for<br/>
     Our locations</center>
                           </p>
@@ -308,7 +308,7 @@ function ContactUs4() {
                           <i className="ni ni-mobile-button"></i>
                         </div>
                         <div className="description">
-                          <p className="info-title text-white mt-2"><center>
+                          <p className="info-title text-warning mt-2"><center>
                             +1 (813) 724 4100</center>
                           </p>
                         </div></a>
@@ -318,7 +318,7 @@ function ContactUs4() {
                           <i className="ni ni-email-83"></i>
                         </div>
                         <div className="description">
-                          <p style={{fontSize:'11px'}} className="info-title text-white mt-2">
+                          <p style={{fontSize:'11px'}} className="info-title text-warning mt-2">
                            <center> shawn@wichpressfoodtruck.com</center>
                           </p>
                         </div></a>

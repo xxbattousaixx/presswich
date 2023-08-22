@@ -1,5 +1,6 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import { hydrate, render } from 'react-dom';
+
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
 import "assets/css/nucleo-svg.css";
@@ -9,6 +10,8 @@ import "assets/scss/argon-design-system.scss?v1.0.0";
 
 import Index from "views/Index.js";
 import Sections from "views/Sections.js";
+import Sections2 from "views/Sections2.js";
+
 import Presentation from "views/Presentation.js";
 import AboutUs from "views/examples/AboutUs.js";
 import AccountSettings from "views/examples/AccountSettings.js";
@@ -29,16 +32,21 @@ import ProfilePage from "views/examples/ProfilePage.js";
 import RegisterPage from "views/examples/RegisterPage.js";
 import ResetPage from "views/examples/ResetPage.js";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(
-  <BrowserRouter>
+const rootElement = document.getElementById("root");
+console.log = function() {} 
+if (rootElement.hasChildNodes()) {
+  hydrate(<BrowserRouter>
     <Switch>
       <Route path="/about" exact render={(props) => <Index {...props} />} />
       <Route
         path="/menu"
         exact
         render={(props) => <Sections {...props} />}
+      />
+       <Route
+        path="/catering"
+        exact
+        render={(props) => <Sections2 {...props} />}
       />
       <Route
         path="/home"
@@ -133,5 +141,114 @@ root.render(
       />
       <Redirect to="/home" />
     </Switch>
-  </BrowserRouter>
-);
+  </BrowserRouter>, rootElement);
+} else {
+  render(<BrowserRouter>
+    <Switch>
+      <Route path="/about" exact render={(props) => <Index {...props} />} />
+      <Route
+        path="/menu"
+        exact
+        render={(props) => <Sections {...props} />}
+      />
+      <Route
+        path="/catering"
+        exact
+        render={(props) => <Sections2 {...props} />}
+      />
+      <Route
+        path="/home"
+        exact
+        render={(props) => <Presentation {...props} />}
+      />
+      <Route
+        path="/about-us"
+        exact
+        render={(props) => <AboutUs {...props} />}
+      />
+      <Route
+        path="/account-settings"
+        exact
+        render={(props) => <AccountSettings {...props} />}
+      />
+      <Route
+        path="/blog-post"
+        exact
+        render={(props) => <BlogPost {...props} />}
+      />
+      <Route
+        path="/blog-posts"
+        exact
+        render={(props) => <BlogPosts {...props} />}
+      />
+      <Route
+        path="/chat-page"
+        exact
+        render={(props) => <ChatPage {...props} />}
+      />
+      <Route
+        path="/checkout-page"
+        exact
+        render={(props) => <CheckoutPage {...props} />}
+      />
+      <Route
+        path="/contact-us"
+        exact
+        render={(props) => <ContactUs {...props} />}
+      />
+      <Route
+        path="/ecommerce"
+        exact
+        render={(props) => <Ecommerce {...props} />}
+      />
+      <Route path="/error" exact render={(props) => <Error {...props} />} />
+      <Route
+        path="/error-500"
+        exact
+        render={(props) => <Error500 {...props} />}
+      />
+      <Route
+        path="/invoice-page"
+        exact
+        render={(props) => <InvoicePage {...props} />}
+      />
+      <Route
+        path="/landing-page"
+        exact
+        render={(props) => <LandingPage {...props} />}
+      />
+      <Route
+        path="/login-page"
+        exact
+        render={(props) => <LoginPage {...props} />}
+      />
+      <Route
+        path="/pricing-page"
+        exact
+        render={(props) => <PricingPage {...props} />}
+      />
+      <Route
+        path="/product-page"
+        exact
+        render={(props) => <ProductPage {...props} />}
+      />
+      <Route
+        path="/profile-page"
+        exact
+        render={(props) => <ProfilePage {...props} />}
+      />
+      <Route
+        path="/locations"
+        exact
+        render={(props) => <RegisterPage {...props} />}
+      />
+      <Route
+        path="/events"
+        exact
+        render={(props) => <ResetPage {...props} />}
+      />
+      <Redirect to="/home" />
+    </Switch>
+  </BrowserRouter>, rootElement);
+}
+

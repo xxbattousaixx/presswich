@@ -6,20 +6,20 @@ import React from "react";
 // } from "reactstrap";
 
 // Core Components
-import Blogs1 from "components/blogs/Blogs1.js";
-import Blogs4 from "components/blogs/Blogs4.js";
+import Blogs3 from "components/blogs/Blogs3.js";
 
-function BlogsSection() {
+
+function BlogsSection2() {
   return (
     <>
       <div style={{backgroundColor:'#ffffcc'}} className="cd-section" id="blogs">
-        <Blogs4/>
+        <Blogs3/>
+
         
-        <Blogs1/>
       </div>
       
     </>
   );
 }
 
-export default BlogsSection;
+export default BlogsSection2;

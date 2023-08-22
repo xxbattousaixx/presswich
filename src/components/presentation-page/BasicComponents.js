@@ -17,7 +17,7 @@ function BasicComponents() {
           <Row>
             <Col className="mb-md-5" lg="5" md="10">
               <h1 className="display-3">
-                WhichPress
+                WichPress
                 <span className="text-primary">
                   Food Truck
                 </span>

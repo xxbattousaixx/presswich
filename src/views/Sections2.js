@@ -1,22 +1,19 @@
 import React from "react";
 
 // reactstrap components
-// import {
-//
-// } from "reactstrap";
+
 import { Container, Button, Link } from "react-floating-action-button";
+
 // Core Components
 import DemoNavbar from "components/navbars/DemoNavbar.js";
-import Footer3 from "components/footers/Footer3.js";
-import HeaderPresentation from "components/headers/HeaderPresentation.js";
-import BasicComponents from "components/presentation-page/BasicComponents";
+import DemoFooter from "components/footers/DemoFooter.js";
 
+// Section Components
+import BlogsSection2 from "components/sections-page/BlogsSection2.js";
 
-// Sections for this page
-
-function Presentation() {
+function Sections2() {
   React.useEffect(() => {
-    document.body.classList.add("presentation-page");
+    document.body.classList.add("sections2-page");
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
     var href = window.location.href.substring(
@@ -29,23 +26,22 @@ function Presentation() {
       document.getElementById(href).scrollIntoView();
     }
     return function cleanup() {
-      document.body.classList.remove("presentation-page");
+      document.body.classList.remove("sections2-page");
     };
   });
   return (
     <>
       <DemoNavbar type="dark" />
       <div className="wrapper">
-        
-        <HeaderPresentation />
-        <BasicComponents/>
-       <Container>
+     
+        <BlogsSection2 />
+        <Container>
           <Link
             href="/contact-us"
             tooltip="Book online"
             icon="far fa-sticky-note"
           />
-          <Link  href="tel:8137244100" tooltip="Call us" icon="fa fa-phone" />
+                <Link  href="tel:8137244100" tooltip="Call us" icon="fa fa-phone" />
     <Link href="mailto:shawn@wichpressfoodtruck.com" tooltip="Email us" icon="fa fa-envelope" />
           <Button
             tooltip="We cater!"
@@ -54,10 +50,10 @@ function Presentation() {
             onClick={() => alert("Call us at 813-724-4100")}
           />
         </Container>
-        <Footer3 />
+        <DemoFooter />
       </div>
     </>
   );
 }
 
-export default Presentation;
+export default Sections2;

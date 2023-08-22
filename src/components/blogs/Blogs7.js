@@ -1,103 +1,122 @@
 import React from "react";
 
-// reactstrap components
-import { Button, ButtonGroup, Media, Container, Row, Col } from "reactstrap";
+// reactstrap componentsimport { Card, CardBody, CardTitle, Container, Row, Col } from "reactstrap";
+import { Card, CardBody, CardTitle, Container, Row, Col } from "reactstrap";
+
 
 function Blogs7() {
   return (
     <>
       <section className="blogs-7">
-        <Container>
+        <Container fluid>
+          <Row className="mb-md-5">
+            <Col className="mx-auto" md="8">
+              <h3 className="display-3 text-center">Our recent writings</h3>
+              <p className="lead text-center">
+                I always felt like I could do anything. That’s the main thing
+                people are controlled by! Thoughts- their perception of
+                themselves! They're slowed down by their perception of
+                themselves. If you're taught you can’t do anything, you won’t do
+                anything. I was taught I could do everything.
+              </p>
+            </Col>
+          </Row>
           <Row>
-            <Col className="mx-auto" lg="10">
-              <h3 className="display-3 mb-5">Latest Blogposts</h3>
-              <div className="media-area">
-                <div className="media-header">
-                  <Row>
-                    <Col className="d-flex justify-content-start" md="6">
-                      <div className="avatar">
-                        <Media
-                          alt="..."
-                          className="shadow"
-                          object
-                          src={require("assets/img/faces/team-2.jpg")}
-                        ></Media>
-                      </div>
-                      <div className="text">
-                        <span className="name">Tom Hanks</span>
-                        <div className="meta">Drawn on 23 Jan</div>
-                      </div>
-                    </Col>
-                    <Col className="d-flex justify-content-end" md="6">
-                      <ButtonGroup>
-                        <Button
-                          className="btn-icon-only"
-                          color="secondary"
-                          outline
-                          size="sm"
-                        >
-                          <i className="ni ni-notification-70"></i>
-                        </Button>
-                        <Button
-                          className="btn-icon-only"
-                          color="secondary"
-                          outline
-                          size="sm"
-                        >
-                          <i className="ni ni-chat-round"></i>
-                        </Button>
-                        <Button
-                          className="btn-icon-only"
-                          color="secondary"
-                          outline
-                          size="sm"
-                        >
-                          <i className="ni ni-single-copy-04"></i>
-                        </Button>
-                      </ButtonGroup>
-                    </Col>
-                  </Row>
-                  <div className="image">
-                    <img
-                      alt="..."
-                      src={require("assets/img/theme/wade.jpg")}
-                    ></img>
-                  </div>
-                  <p className="description">
-                    If you’ve ever wanted to train a machine learning model and
-                    integrate it with IFTTT, you now can with a new offering
-                    from MateLabs. MateVerse, a platform where novices can spin
-                    out machine...If you’ve ever wanted to train a machine
-                    learning model and integrate it with IFTTT, you now can with
-                    a new offering from MateLabs. MateVerse, a platform where
-                    novices can spin out machine...{" "}
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      Read More
-                    </a>
-                  </p>
-                  <p className="hashtag">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      #tothetop
-                    </a>{" "}
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      #allthewayup
-                    </a>{" "}
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      #goodvibesonly
-                    </a>
-                  </p>
-                  <div className="actions mb-5">
-                    <Button color="info" outline size="sm">
-                      <i className="ni ni-like-2"></i>
-                      Like
-                    </Button>
-                    <Button color="info" outline size="sm">
-                      <i className="ni ni-curved-next"></i>
-                      Share
-                    </Button>
-                  </div>
-                </div>
-              </div>
+            <Col lg="3">
+              <Card
+                className="card-blog card-background"
+                data-animation="zooming"
+              >
+                <div
+                  className="full-background"
+                  style={{
+                    backgroundImage:
+                      "url(" + require("assets/img/sections/damian.jpg") + ")",
+                  }}
+                ></div>
+                <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                  <CardBody>
+                    <div className="content-bottom">
+                      <h6 className="card-category text-white opacity-8">
+                        AI at the Edge
+                      </h6>
+                      <CardTitle tag="h5">Research Byte</CardTitle>
+                    </div>
+                  </CardBody>
+                </a>
+              </Card>
+            </Col>
+            <Col lg="3">
+              <Card
+                className="card-blog card-background"
+                data-animation="zooming"
+              >
+                <div
+                  className="full-background"
+                  style={{
+                    backgroundImage:
+                      "url(" + require("assets/img/sections/ashim.jpg") + ")",
+                  }}
+                ></div>
+                <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                  <CardBody>
+                    <div className="content-bottom">
+                      <h6 className="card-category text-white opacity-8">
+                        Spectrum
+                      </h6>
+                      <CardTitle tag="h5">Data Virtualization</CardTitle>
+                    </div>
+                  </CardBody>
+                </a>
+              </Card>
+            </Col>
+            <Col lg="3">
+              <Card
+                className="card-blog card-background"
+                data-animation="zooming"
+              >
+                <div
+                  className="full-background"
+                  style={{
+                    backgroundImage:
+                      "url(" + require("assets/img/sections/odin.jpg") + ")",
+                  }}
+                ></div>
+                <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                  <CardBody>
+                    <div className="content-bottom">
+                      <h6 className="card-category text-white opacity-8">
+                        Touch on a trend
+                      </h6>
+                      <CardTitle tag="h5">New Challenges</CardTitle>
+                    </div>
+                  </CardBody>
+                </a>
+              </Card>
+            </Col>
+            <Col lg="3">
+              <Card
+                className="card-blog card-background"
+                data-animation="zooming"
+              >
+                <div
+                  className="full-background"
+                  style={{
+                    backgroundImage:
+                      "url(" + require("assets/img/sections/dane.jpg") + ")",
+                  }}
+                ></div>
+                <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                  <CardBody>
+                    <div className="content-bottom">
+                      <h6 className="card-category text-white opacity-8">
+                        Self-Driving Cars
+                      </h6>
+                      <CardTitle tag="h5">Driverless Future</CardTitle>
+                    </div>
+                  </CardBody>
+                </a>
+              </Card>
             </Col>
           </Row>
         </Container>
